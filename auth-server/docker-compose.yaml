@@ -1,0 +1,53 @@
+version: '3.7'
+
+services:
+  postgres:
+    image: postgres:16.2
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: auth
+      POSTGRES_USER: valentina
+      POSTGRES_PASSWORD: password
+    networks:
+      - keycloak_network
+
+  keycloak:
+    image: quay.io/keycloak/keycloak:23.0.6
+    command: 
+      - start-dev
+      - --https-port=9000
+    volumes:
+      - ./cert-files:/etc/certs
+    environment:
+      #KC_HOSTNAME: localhost
+      KC_HOSTNAME_PORT: 9000
+      KC_HOSTNAME_STRICT_BACKCHANNEL: false
+      #KC_HTTP_ENABLED: true
+      KC_HOSTNAME_STRICT_HTTPS: false
+      KC_HEALTH_ENABLED: true
+      KEYCLOAK_ADMIN: valentina
+      KEYCLOAK_ADMIN_PASSWORD: password
+      KC_DB: postgres
+      KC_DB_URL: jdbc:postgresql://postgres/auth
+      KC_DB_USERNAME: valentina
+      KC_DB_PASSWORD: password
+      KC_PROXY: edge
+      KC_HTTPS_CERTIFICATE_FILE: /etc/certs/keycloak-server.crt.pem
+      KC_HTTPS_CERTIFICATE_KEY_FILE: /etc/certs/keycloak-server.key.pem
+    ports:
+      - 9000:9000
+      - 8443:8443
+    restart: always
+    depends_on:
+      - postgres
+    networks:
+      - keycloak_network
+
+volumes:
+  postgres_data:
+    driver: local
+
+networks:
+  keycloak_network:
+    driver: bridge

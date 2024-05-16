@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: drug-discovery-service
+  namespace: default
+spec:
+  selector:
+    app: drug-discovery
+  type: ClusterIP
+  ports:
+    - protocol: TCP
+      port: 8761
+      targetPort: 8761

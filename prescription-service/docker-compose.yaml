@@ -1,0 +1,56 @@
+version: "3.9"
+services:
+  prescription-db-master:
+    image: bitnami/postgresql
+    restart: always
+    ports:
+      - '5434:5432'
+    environment:
+      - POSTGRESQL_LOG_HOSTNAME=true
+      - POSTGRESQL_REPLICATION_MODE=master
+      - POSTGRESQL_REPLICATION_USER=repl_user
+      - POSTGRESQL_REPLICATION_PASSWORD=repl_user
+      - POSTGRESQL_USERNAME=valentina
+      - POSTGRESQL_PASSWORD=password
+      - POSTGRESQL_DATABASE=prescription
+      - ALLOW_EMPTY_PASSWORD=yes
+      - WAL_SENDER_FREQUENCY=100
+      - MAX_REPLICATION_LAG=3600
+      - SYNCHRONOUS_COMMIT=off
+
+  prescription-db-slave-1:
+    image: bitnami/postgresql
+    restart: always
+    ports:
+      - '5436:5432'
+    depends_on:
+      - prescription-db-master
+    environment:
+      - POSTGRESQL_USERNAME=valentina
+      - POSTGRESQL_PASSWORD=password
+      - POSTGRESQL_MASTER_HOST=prescription-db-master
+      - POSTGRESQL_LOG_HOSTNAME=true
+      - POSTGRESQL_REPLICATION_MODE=slave
+      - POSTGRESQL_REPLICATION_USER=repl_user
+      - POSTGRESQL_REPLICATION_PASSWORD=repl_user
+      - POSTGRESQL_MASTER_PORT_NUMBER=5432
+      - ALLOW_EMPTY_PASSWORD=yes
+      - MAX_REPLICATION_LAG=3600
+  prescription-db-slave-2:
+    image: bitnami/postgresql
+    restart: always
+    ports:
+      - '5437:5432'
+    depends_on:
+      - prescription-db-master
+    environment:
+      - POSTGRESQL_USERNAME=valentina
+      - POSTGRESQL_PASSWORD=password
+      - POSTGRESQL_MASTER_HOST=prescription-db-master
+      - POSTGRESQL_LOG_HOSTNAME=true
+      - POSTGRESQL_REPLICATION_MODE=slave
+      - POSTGRESQL_REPLICATION_USER=repl_user
+      - POSTGRESQL_REPLICATION_PASSWORD=repl_user
+      - POSTGRESQL_MASTER_PORT_NUMBER=5432
+      - ALLOW_EMPTY_PASSWORD=yes
+      - MAX_REPLICATION_LAG=3600

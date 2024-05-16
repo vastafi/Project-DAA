@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: drug-discovery-deployment
+  namespace: default
+  labels:
+    app: drug-discovery
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: drug-discovery
+  template:
+    metadata:
+      labels:
+        app: drug-discovery
+    spec:
+      containers:
+        - name: drug-discovery
+          image: baisnake/drug-discovery:v1
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8761

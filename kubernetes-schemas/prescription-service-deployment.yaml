@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: prescription-service-deployment
+  namespace: default
+  labels:
+    app: prescription-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: prescription-service
+  template:
+    metadata:
+      labels:
+        app: prescription-service
+    spec:
+      containers:
+        - name: prescription-service
+          image: baisnake/prescription-service:v1
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: ISSUER_URI
+              value: "http://keycloak-service.default.svc.cluster.local:9000/realms/master"
+            - name: EUREKA_URI
+              value: "http://drug-discovery-service.default.svc.cluster.local:8761/drug-discovery/eureka"
+            - name: DATABASE_URI
+              value: "prescription-db-service.default.svc.cluster.local:5434"
+            - name: KAFKA_URI
+              value: "kafka-service.default.svc.cluster.local:9092"
+          ports:
+            - containerPort: 8081

@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: drug-gateway-deployment
+  namespace: default
+  labels:
+    app: drug-gateway
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: drug-gateway
+  template:
+    metadata:
+      labels:
+        app: drug-gateway
+    spec:
+      containers:
+        - name: drug-gateway
+          image: baisnake/drug-gateway:v1
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: ISSUER_URI
+              value: "http://keycloak-service.default.svc.cluster.local:9000/realms/master"
+            - name: EUREKA_URI
+              value: "http://drug-discovery-service.default.svc.cluster.local:8761/drug-discovery/eureka"
+            - name: CORS_ALLOWED_ORIGIN
+              value: "http://drug-gateway-service.default.svc.cluster.local:8080"
+            - name: ENV
+              value: "dev"
+          ports:
+            - containerPort: 8080

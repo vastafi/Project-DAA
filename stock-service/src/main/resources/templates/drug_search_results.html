@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Drug Search Results</h1>
+
+<p>Dear client,</p>
+
+<p>This email contains the results for your recent search for prescription drugs.</p>
+
+<h2>Search Results</h2>
+
+<ul>
+    <li th:each="drug : ${drugs}">
+        <p><strong th:text="'Drug: ' + ${drug.prescriptionDrug.name}"></strong></p>
+        <ul>
+            <li th:if="*{drug.foundDrugs.isEmpty()}">
+                <span th:text="'Drug ' + ${drug.prescriptionDrug.name} + ' not found in any pharmacies.'"></span>
+            </li>
+            <li th:each="foundDrug : ${drug.foundDrugs}" th:unless="*{drug.foundDrugs.isEmpty()}">
+                <span>Drug Name:</span>
+                <span th:text="${foundDrug.name}">Drug Name</span><br>
+                <span>Drug Price:</span>
+                <span th:text="${foundDrug.price}">Drug Price</span><br>
+                <span>Pharmacy name:</span>
+                <span th:text="${foundDrug.pharmacy.name}">Pharmacy name</span><br>
+                <span>Pharmacy address:</span>
+                <span th:text="${foundDrug.pharmacy.address}">Pharmacy address</span><br>
+                <span>Pharmacy phone</span>
+                <span th:text="${foundDrug.pharmacy.phone}">Pharmacy phone</span>
+            </li>
+        </ul>
+        <p th:unless="*{drug.alternatives.isEmpty()}">
+            <span th:text="'Here are some pharmacies with alternative drugs for ' + ${drug.prescriptionDrug.name} + ':'"></span>
+        </p>
+        <ul th:unless="*{drug.alternatives.isEmpty()}">
+            <li th:each="alternative : ${drug.alternatives}">
+                <span>Drug Name:</span>
+                <span th:text="${alternative.name}">Drug Name</span><br>
+                <span>Drug Price:</span>
+                <span th:text="${alternative.price}">Drug Price</span><br>
+                <span>Pharmacy name:</span>
+                <span th:text="${alternative.pharmacy.name}">Pharmacy name</span><br>
+                <span>Pharmacy address:</span>
+                <span th:text="${alternative.pharmacy.address}">Pharmacy address</span><br>
+                <span>Pharmacy phone:</span>
+                <span th:text="${alternative.pharmacy.phone}">Pharmacy phone</span>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<p>Thank you for using our drug search service.</p>
+
+<p>Sincerely,</p>
+<p>The Pharmacy Search Team</p>
+</body>
+</html>

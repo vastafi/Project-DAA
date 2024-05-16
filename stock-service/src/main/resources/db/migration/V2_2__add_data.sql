@@ -1,0 +1,1 @@
+ALTER TABLE drug_stock ADD COLUMN active_substance VARCHAR(255);

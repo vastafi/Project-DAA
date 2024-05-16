@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: stock-db-deployment
+  namespace: default
+  labels:
+    app: stock-db
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: stock-db
+  template:
+    metadata:
+      labels:
+        app: stock-db
+    spec:
+      containers:
+        - name: stock-db
+          image: postgres:13.3
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: POSTGRES_DB
+              value: "stock"
+            - name: POSTGRES_USER
+              value: "valentina"
+            - name: POSTGRES_PASSWORD
+              value: "password"
+          ports:
+            - containerPort: 5432

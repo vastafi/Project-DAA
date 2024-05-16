@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "a690b309-d085-46f0-a5d7-c1bd27b0179b",
+		"name": "Auth Server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12721247",
+		"_collection_link": "https://galactic-escape-327337.postman.co/workspace/Drug-System~f1c2c8f2-1b6d-4be9-879d-bc6f5cc595c9/collection/12721247-a690b309-d085-46f0-a5d7-c1bd27b0179b?action=share&source=collection_link&creator=12721247"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "client_id",
+							"value": "drug-system",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "2TmgUGgVZ9bhxRU8Bqpanz9dWT6TtaSy",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "openid",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "valentina",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9000/realms/master/protocol/openid-connect/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"realms",
+						"master",
+						"protocol",
+						"openid-connect",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Refresh token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "client_id",
+							"value": "drug-system",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "refresh_token",
+							"type": "text"
+						},
+						{
+							"key": "refresh_token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0YWQ4ZmU3Zi0zZTcyLTQ0YjUtYjJjZS03ZWJiMGU5YmJlMjMifQ.eyJleHAiOjE3MTM4MDQzODEsImlhdCI6MTcxMzgwMjU4MSwianRpIjoiYWJlMTVkMWQtYTk5OC00ODQyLTlkODItMmZhYmI2NTQ5ODA1IiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwL3JlYWxtcy9tYXN0ZXIiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjkwMDAvcmVhbG1zL21hc3RlciIsInN1YiI6ImJiNTk4MmQ4LWJiNTMtNDc0MS04MDk5LWExZGFkZmY5ZTZlOSIsInR5cCI6IlJlZnJlc2giLCJhenAiOiJkcnVnLXN5c3RlbSIsInNlc3Npb25fc3RhdGUiOiIyMTMwMTgwMi0zYmQzLTQxYmEtOTNhOS0yMGQ3MWY5Y2M1YmMiLCJzY29wZSI6Im9wZW5pZCBlbWFpbCBwcm9maWxlIiwic2lkIjoiMjEzMDE4MDItM2JkMy00MWJhLTkzYTktMjBkNzFmOWNjNWJjIn0.zjR_Af9q6gKfvIqgwT_WTNCv9yV-LQnoKslkSbXy8GE",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "2TmgUGgVZ9bhxRU8Bqpanz9dWT6TtaSy",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "openid",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9000/realms/master/protocol/openid-connect/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"realms",
+						"master",
+						"protocol",
+						"openid-connect",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User info",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

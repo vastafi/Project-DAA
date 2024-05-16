@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: stock-service-deployment
+  namespace: default
+  labels:
+    app: stock-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: stock-service
+  template:
+    metadata:
+      labels:
+        app: stock-service
+    spec:
+      containers:
+        - name: stock-service
+          image: baisnake/stock-service:v1
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: ISSUER_URI
+              value: "http://keycloak-service.default.svc.cluster.local:9000/realms/master"
+            - name: EUREKA_URI
+              value: "http://drug-discovery-service.default.svc.cluster.local:8761/drug-discovery/eureka"
+            - name: DATABASE_URI
+              value: "stock-db-service.default.svc.cluster.local:5435"
+            - name: KAFKA_URI
+              value: "kafka-service.default.svc.cluster.local:9092"
+          ports:
+            - containerPort: 8082

@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  stock_db:
+    image: postgres:13.3
+    environment:
+      POSTGRES_DB: "stock"
+      POSTGRES_USER: "valentina"
+      POSTGRES_PASSWORD: "password"
+    ports:
+      - "5435:5432"

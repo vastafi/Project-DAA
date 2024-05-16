@@ -1,0 +1,72 @@
+gateway-context: /drug-gateway
+
+front-context: /drug-next
+
+
+spring:
+  boot:
+  application:
+    name: drug-gateway
+  cloud:
+    gateway:
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Origin Access-Control-Allow-Credentials, RETAIN_UNIQUE
+      discovery:
+        locator:
+          # set to false in order for the routes path rewriting to work
+          enabled: false
+          lowerCaseServiceId: true
+  security:
+    oauth2:
+      client:
+        provider:
+            keycloak:
+                issuer-uri: ${ISSUER_URI:https://localhost:9000/realms/master}
+        registration:
+            keycloak:
+                client-id: drug-system
+                client-secret: ${CLIENT_SECRET:2TmgUGgVZ9bhxRU8Bqpanz9dWT6TtaSy}
+                authorization-grant-type: authorization_code
+                scope: openid
+
+server:
+  port: 8080
+#  forward-headers-strategy: framework
+
+cors-allowed-origin: ${CORS_ALLOWED_ORIGIN:http://127.0.0.1:8080}
+
+logging:
+  pattern.console: "%d{yyyyMMdd HH:mm:ss} %-5level %logger{36}:%L - %msg%n"
+  level:
+    root: DEBUG
+    com:
+      drugsystem:
+        DrugSystem: INFO
+    io:
+      r2dbc:
+        postgresql:
+          QUERY: INFO # for queries
+          PARAM: INFO # for params
+    reactor.netty.http.client: DEBUG
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/drug-discovery/eureka}
+  instance:
+    preferIpAddress: true
+env: ${ENV:local}
+auth-server:
+  trust-store:
+    jks: ${AUTH_SERVER_TRUST_STORE_PATH:/certs/drug-store.jks}
+    password: ${AUTH_SERVER_TRUST_STORE_PASSWORD:valentina}

@@ -1,0 +1,26 @@
+INSERT INTO drug_category_catalog (id, name, parent_fk) VALUES (1, 'Antibiotic', null);
+INSERT INTO drug_category_catalog (id, name, parent_fk) VALUES (2, 'Analgesic', null);
+INSERT INTO drug_category_catalog (id, name, parent_fk) VALUES (3, 'Antipiretic', null);
+INSERT INTO drug_category_catalog (id, name, parent_fk) VALUES (4, 'Antihistaminic', null);
+INSERT INTO drug_category_catalog (id, name, parent_fk) VALUES (5, 'Antiviral', null);
+INSERT INTO drug_category_catalog (id, name, parent_fk) VALUES (6, 'Antifungic', null);
+INSERT INTO drug_category_catalog (id, name, parent_fk) VALUES (7, 'Antiparazitic', null);
+INSERT INTO drug_category_catalog (id, name, parent_fk) VALUES (8, 'Antiseptic', null);
+INSERT INTO drug_category_catalog (id, name, parent_fk) VALUES (9, 'Mame si copii', null);
+INSERT INTO drug_category_catalog (id, name, parent_fk) VALUES (10, 'Suzete', 9);
+INSERT INTO drug_category_catalog (id, name, parent_fk) VALUES (11, 'Jucarii', 9);
+
+INSERT INTO drug_form_catalog (id, name, abbreviation) VALUES (1, 'Tableta', 'tbl');
+INSERT INTO drug_form_catalog (id, name, abbreviation) VALUES (2, 'Capsula', 'cps');
+INSERT INTO drug_form_catalog (id, name, abbreviation) VALUES (3, 'Sirop', 'syr');
+INSERT INTO drug_form_catalog (id, name, abbreviation) VALUES (4, 'Supozitor', 'sup');
+INSERT INTO drug_form_catalog (id, name, abbreviation) VALUES (5, 'Gel', 'gel');
+INSERT INTO drug_form_catalog (id, name, abbreviation) VALUES (6, 'Crema', 'crm');
+INSERT INTO drug_form_catalog (id, name, abbreviation) VALUES (7, 'Unguent', 'ung');
+INSERT INTO drug_form_catalog (id, name, abbreviation) VALUES (8, 'Pulbere', 'pul');
+INSERT INTO drug_form_catalog (id, name, abbreviation) VALUES (9, 'Solutie', 'sol');
+INSERT INTO drug_form_catalog (id, name, abbreviation) VALUES (10, 'Aerosol', 'aer');
+INSERT INTO drug_form_catalog (id, name, abbreviation) VALUES (11, 'Lichid', 'liq');
+INSERT INTO drug_form_catalog (id, name, abbreviation) VALUES (12, 'Pastila', 'pil');
+INSERT INTO drug_form_catalog (id, name, abbreviation) VALUES (13, 'Pomada', 'pom');
+INSERT INTO drug_form_catalog (id, name, abbreviation) VALUES (14, 'Spray', 'spr');
