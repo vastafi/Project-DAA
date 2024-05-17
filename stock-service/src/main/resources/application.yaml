@@ -28,6 +28,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
+#          issuer-uri: ${ISSUER_URI:http://localhost:9000/realms/master}
           issuer-uri: ${ISSUER_URI:https://localhost:9000/realms/master}
           jwk-set-uri: ${spring.security.oauth2.resourceserver.jwt.issuer-uri}/protocol/openid-connect/certs
   mail:

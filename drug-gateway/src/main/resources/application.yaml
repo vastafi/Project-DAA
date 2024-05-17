@@ -21,7 +21,8 @@ spring:
       client:
         provider:
             keycloak:
-                issuer-uri: ${ISSUER_URI:https://localhost:9000/realms/master}
+              #issuer-uri: ${ISSUER_URI:http://localhost:9000/realms/master}
+              issuer-uri: ${ISSUER_URI:https://localhost:9000/realms/master}
         registration:
             keycloak:
                 client-id: drug-system
