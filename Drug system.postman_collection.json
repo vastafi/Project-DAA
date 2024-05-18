@@ -1,0 +1,1064 @@
+{
+	"info": {
+		"_postman_id": "c7dc487a-a358-485a-90fc-523b248cb6cb",
+		"name": "Drug system",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12695381"
+	},
+	"item": [
+		{
+			"name": "Doctor",
+			"item": [
+				{
+					"name": "Create or Update Doctor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4cldUUGdaTkR5V3RSaVIybkR0NVhZa3dQQmhVNk94VC0yQUZuN2dEUDhnIn0.eyJleHAiOjE3MTU5ODgwNjYsImlhdCI6MTcxNTk1MjA2NiwianRpIjoiNDI0ZmRjZTctZTEyOC00MTNmLTllZDAtMDM5MzYxNGE4ZTQ1IiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwL3JlYWxtcy9tYXN0ZXIiLCJhdWQiOlsibWFzdGVyLXJlYWxtIiwiYWNjb3VudCJdLCJzdWIiOiI0YThmMmMzYy02YzZkLTQ5ZTEtYTgwYy1hMjFmODczYzAxN2MiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJkcnVnLXN5c3RlbSIsInNlc3Npb25fc3RhdGUiOiJhZjAwYjk0ZC0yYTJiLTQ4YmQtYjlhZS05ZDVlZDFiOTRhNWQiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImNyZWF0ZS1yZWFsbSIsIlBIQVJNQUNJU1QiLCJkZWZhdWx0LXJvbGVzLW1hc3RlciIsIm9mZmxpbmVfYWNjZXNzIiwiYWRtaW4iLCJ1bWFfYXV0aG9yaXphdGlvbiIsIkFETUlOIiwiVVNFUiIsIkRPQ1RPUiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImRydWctc3lzdGVtIjp7InJvbGVzIjpbIlBIQVJNQUNJU1QiLCJBRE1JTiIsIlVTRVIiLCJET0NUT1IiXX0sIm1hc3Rlci1yZWFsbSI6eyJyb2xlcyI6WyJ2aWV3LXJlYWxtIiwidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsImNyZWF0ZS1jbGllbnQiLCJtYW5hZ2UtdXNlcnMiLCJxdWVyeS1yZWFsbXMiLCJ2aWV3LWF1dGhvcml6YXRpb24iLCJxdWVyeS1jbGllbnRzIiwicXVlcnktdXNlcnMiLCJtYW5hZ2UtZXZlbnRzIiwibWFuYWdlLXJlYWxtIiwidmlldy1ldmVudHMiLCJ2aWV3LXVzZXJzIiwidmlldy1jbGllbnRzIiwibWFuYWdlLWF1dGhvcml6YXRpb24iLCJtYW5hZ2UtY2xpZW50cyIsInF1ZXJ5LWdyb3VwcyJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6ImFmMDBiOTRkLTJhMmItNDhiZC1iOWFlLTlkNWVkMWI5NGE1ZCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ2YWxlbnRpbmEiLCJlbWFpbCI6ImFzdGFmaTk4QG1haWwucnUifQ.AdJeINF1TUNY-6Ggqc2mH8GCX-wNih7VRzyBaA_bMXzrrsRpqnkwcDJemyVUQiENM-aYRy6LP-jhTGKzFHcsBnRzCiE7w5_VTHJi2H0001bL6i3FrW5TMV3ss63V0cMPST_cJJTXQmIHeZzTiMIrOg6GZRZllTXkrpCOUBA0cc7-oi-OrwjR7l7tRLY4kSy1KtD0PwnWgnRXf5MeJ5tpKsbkJcbs3OFBiRywoUsk6WyCJG8vZ0vHIN-N68IgpwnZLc_g-026yTeSR8K4GqE_gHiDAM3qPIIMyCaxGW8O5qsLUe1W7HG6ZweutcH83KFxObT-0-m6qaSWmxzSVL9R4Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"code\": \"BF74954\",\n    \"firstName\": \"Caradja\",\n    \"lastName\": \"Maria\",\n    \"phone\": \"079163723\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/prescription-service/doctor/create-update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"prescription-service",
+								"doctor",
+								"create-update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Doctor Info by ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4cldUUGdaTkR5V3RSaVIybkR0NVhZa3dQQmhVNk94VC0yQUZuN2dEUDhnIn0.eyJleHAiOjE3MTU5ODgwNjYsImlhdCI6MTcxNTk1MjA2NiwianRpIjoiNDI0ZmRjZTctZTEyOC00MTNmLTllZDAtMDM5MzYxNGE4ZTQ1IiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwL3JlYWxtcy9tYXN0ZXIiLCJhdWQiOlsibWFzdGVyLXJlYWxtIiwiYWNjb3VudCJdLCJzdWIiOiI0YThmMmMzYy02YzZkLTQ5ZTEtYTgwYy1hMjFmODczYzAxN2MiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJkcnVnLXN5c3RlbSIsInNlc3Npb25fc3RhdGUiOiJhZjAwYjk0ZC0yYTJiLTQ4YmQtYjlhZS05ZDVlZDFiOTRhNWQiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImNyZWF0ZS1yZWFsbSIsIlBIQVJNQUNJU1QiLCJkZWZhdWx0LXJvbGVzLW1hc3RlciIsIm9mZmxpbmVfYWNjZXNzIiwiYWRtaW4iLCJ1bWFfYXV0aG9yaXphdGlvbiIsIkFETUlOIiwiVVNFUiIsIkRPQ1RPUiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImRydWctc3lzdGVtIjp7InJvbGVzIjpbIlBIQVJNQUNJU1QiLCJBRE1JTiIsIlVTRVIiLCJET0NUT1IiXX0sIm1hc3Rlci1yZWFsbSI6eyJyb2xlcyI6WyJ2aWV3LXJlYWxtIiwidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsImNyZWF0ZS1jbGllbnQiLCJtYW5hZ2UtdXNlcnMiLCJxdWVyeS1yZWFsbXMiLCJ2aWV3LWF1dGhvcml6YXRpb24iLCJxdWVyeS1jbGllbnRzIiwicXVlcnktdXNlcnMiLCJtYW5hZ2UtZXZlbnRzIiwibWFuYWdlLXJlYWxtIiwidmlldy1ldmVudHMiLCJ2aWV3LXVzZXJzIiwidmlldy1jbGllbnRzIiwibWFuYWdlLWF1dGhvcml6YXRpb24iLCJtYW5hZ2UtY2xpZW50cyIsInF1ZXJ5LWdyb3VwcyJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6ImFmMDBiOTRkLTJhMmItNDhiZC1iOWFlLTlkNWVkMWI5NGE1ZCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ2YWxlbnRpbmEiLCJlbWFpbCI6ImFzdGFmaTk4QG1haWwucnUifQ.AdJeINF1TUNY-6Ggqc2mH8GCX-wNih7VRzyBaA_bMXzrrsRpqnkwcDJemyVUQiENM-aYRy6LP-jhTGKzFHcsBnRzCiE7w5_VTHJi2H0001bL6i3FrW5TMV3ss63V0cMPST_cJJTXQmIHeZzTiMIrOg6GZRZllTXkrpCOUBA0cc7-oi-OrwjR7l7tRLY4kSy1KtD0PwnWgnRXf5MeJ5tpKsbkJcbs3OFBiRywoUsk6WyCJG8vZ0vHIN-N68IgpwnZLc_g-026yTeSR8K4GqE_gHiDAM3qPIIMyCaxGW8O5qsLUe1W7HG6ZweutcH83KFxObT-0-m6qaSWmxzSVL9R4Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/prescription-service/doctor/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"prescription-service",
+								"doctor",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Approve Doctor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4cldUUGdaTkR5V3RSaVIybkR0NVhZa3dQQmhVNk94VC0yQUZuN2dEUDhnIn0.eyJleHAiOjE3MTU5ODgwNjYsImlhdCI6MTcxNTk1MjA2NiwianRpIjoiNDI0ZmRjZTctZTEyOC00MTNmLTllZDAtMDM5MzYxNGE4ZTQ1IiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwL3JlYWxtcy9tYXN0ZXIiLCJhdWQiOlsibWFzdGVyLXJlYWxtIiwiYWNjb3VudCJdLCJzdWIiOiI0YThmMmMzYy02YzZkLTQ5ZTEtYTgwYy1hMjFmODczYzAxN2MiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJkcnVnLXN5c3RlbSIsInNlc3Npb25fc3RhdGUiOiJhZjAwYjk0ZC0yYTJiLTQ4YmQtYjlhZS05ZDVlZDFiOTRhNWQiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImNyZWF0ZS1yZWFsbSIsIlBIQVJNQUNJU1QiLCJkZWZhdWx0LXJvbGVzLW1hc3RlciIsIm9mZmxpbmVfYWNjZXNzIiwiYWRtaW4iLCJ1bWFfYXV0aG9yaXphdGlvbiIsIkFETUlOIiwiVVNFUiIsIkRPQ1RPUiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImRydWctc3lzdGVtIjp7InJvbGVzIjpbIlBIQVJNQUNJU1QiLCJBRE1JTiIsIlVTRVIiLCJET0NUT1IiXX0sIm1hc3Rlci1yZWFsbSI6eyJyb2xlcyI6WyJ2aWV3LXJlYWxtIiwidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsImNyZWF0ZS1jbGllbnQiLCJtYW5hZ2UtdXNlcnMiLCJxdWVyeS1yZWFsbXMiLCJ2aWV3LWF1dGhvcml6YXRpb24iLCJxdWVyeS1jbGllbnRzIiwicXVlcnktdXNlcnMiLCJtYW5hZ2UtZXZlbnRzIiwibWFuYWdlLXJlYWxtIiwidmlldy1ldmVudHMiLCJ2aWV3LXVzZXJzIiwidmlldy1jbGllbnRzIiwibWFuYWdlLWF1dGhvcml6YXRpb24iLCJtYW5hZ2UtY2xpZW50cyIsInF1ZXJ5LWdyb3VwcyJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6ImFmMDBiOTRkLTJhMmItNDhiZC1iOWFlLTlkNWVkMWI5NGE1ZCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ2YWxlbnRpbmEiLCJlbWFpbCI6ImFzdGFmaTk4QG1haWwucnUifQ.AdJeINF1TUNY-6Ggqc2mH8GCX-wNih7VRzyBaA_bMXzrrsRpqnkwcDJemyVUQiENM-aYRy6LP-jhTGKzFHcsBnRzCiE7w5_VTHJi2H0001bL6i3FrW5TMV3ss63V0cMPST_cJJTXQmIHeZzTiMIrOg6GZRZllTXkrpCOUBA0cc7-oi-OrwjR7l7tRLY4kSy1KtD0PwnWgnRXf5MeJ5tpKsbkJcbs3OFBiRywoUsk6WyCJG8vZ0vHIN-N68IgpwnZLc_g-026yTeSR8K4GqE_gHiDAM3qPIIMyCaxGW8O5qsLUe1W7HG6ZweutcH83KFxObT-0-m6qaSWmxzSVL9R4Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/prescription-service/doctor/approve?id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"prescription-service",
+								"doctor",
+								"approve"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pharmacist",
+			"item": [
+				{
+					"name": "Create or Update Pharmacist",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4cldUUGdaTkR5V3RSaVIybkR0NVhZa3dQQmhVNk94VC0yQUZuN2dEUDhnIn0.eyJleHAiOjE3MTU5ODgwNjYsImlhdCI6MTcxNTk1MjA2NiwianRpIjoiNDI0ZmRjZTctZTEyOC00MTNmLTllZDAtMDM5MzYxNGE4ZTQ1IiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwL3JlYWxtcy9tYXN0ZXIiLCJhdWQiOlsibWFzdGVyLXJlYWxtIiwiYWNjb3VudCJdLCJzdWIiOiI0YThmMmMzYy02YzZkLTQ5ZTEtYTgwYy1hMjFmODczYzAxN2MiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJkcnVnLXN5c3RlbSIsInNlc3Npb25fc3RhdGUiOiJhZjAwYjk0ZC0yYTJiLTQ4YmQtYjlhZS05ZDVlZDFiOTRhNWQiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImNyZWF0ZS1yZWFsbSIsIlBIQVJNQUNJU1QiLCJkZWZhdWx0LXJvbGVzLW1hc3RlciIsIm9mZmxpbmVfYWNjZXNzIiwiYWRtaW4iLCJ1bWFfYXV0aG9yaXphdGlvbiIsIkFETUlOIiwiVVNFUiIsIkRPQ1RPUiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImRydWctc3lzdGVtIjp7InJvbGVzIjpbIlBIQVJNQUNJU1QiLCJBRE1JTiIsIlVTRVIiLCJET0NUT1IiXX0sIm1hc3Rlci1yZWFsbSI6eyJyb2xlcyI6WyJ2aWV3LXJlYWxtIiwidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsImNyZWF0ZS1jbGllbnQiLCJtYW5hZ2UtdXNlcnMiLCJxdWVyeS1yZWFsbXMiLCJ2aWV3LWF1dGhvcml6YXRpb24iLCJxdWVyeS1jbGllbnRzIiwicXVlcnktdXNlcnMiLCJtYW5hZ2UtZXZlbnRzIiwibWFuYWdlLXJlYWxtIiwidmlldy1ldmVudHMiLCJ2aWV3LXVzZXJzIiwidmlldy1jbGllbnRzIiwibWFuYWdlLWF1dGhvcml6YXRpb24iLCJtYW5hZ2UtY2xpZW50cyIsInF1ZXJ5LWdyb3VwcyJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6ImFmMDBiOTRkLTJhMmItNDhiZC1iOWFlLTlkNWVkMWI5NGE1ZCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ2YWxlbnRpbmEiLCJlbWFpbCI6ImFzdGFmaTk4QG1haWwucnUifQ.AdJeINF1TUNY-6Ggqc2mH8GCX-wNih7VRzyBaA_bMXzrrsRpqnkwcDJemyVUQiENM-aYRy6LP-jhTGKzFHcsBnRzCiE7w5_VTHJi2H0001bL6i3FrW5TMV3ss63V0cMPST_cJJTXQmIHeZzTiMIrOg6GZRZllTXkrpCOUBA0cc7-oi-OrwjR7l7tRLY4kSy1KtD0PwnWgnRXf5MeJ5tpKsbkJcbs3OFBiRywoUsk6WyCJG8vZ0vHIN-N68IgpwnZLc_g-026yTeSR8K4GqE_gHiDAM3qPIIMyCaxGW8O5qsLUe1W7HG6ZweutcH83KFxObT-0-m6qaSWmxzSVL9R4Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"licenceCode\": \"100\",\n    \"firstName\": \"Vasile\",\n    \"lastName\": \"Bors\",\n    \"phone\": \"060076896\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/stock-service/pharmacist",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"stock-service",
+								"pharmacist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Approve Pharmacist",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4cldUUGdaTkR5V3RSaVIybkR0NVhZa3dQQmhVNk94VC0yQUZuN2dEUDhnIn0.eyJleHAiOjE3MTU5ODgzODcsImlhdCI6MTcxNTk1MjM4NywianRpIjoiY2ZjMWY4ZjctNGQzMy00YmNlLWIxYTYtOTgwMjAxMDQxZmU1IiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwL3JlYWxtcy9tYXN0ZXIiLCJhdWQiOlsibWFzdGVyLXJlYWxtIiwiYWNjb3VudCJdLCJzdWIiOiI0YThmMmMzYy02YzZkLTQ5ZTEtYTgwYy1hMjFmODczYzAxN2MiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJkcnVnLXN5c3RlbSIsInNlc3Npb25fc3RhdGUiOiIwYzRhYWZjYi1hNzhhLTQ1YjAtYmIyMy05OGNkMWJhMjg3YzMiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImNyZWF0ZS1yZWFsbSIsIlBIQVJNQUNJU1QiLCJkZWZhdWx0LXJvbGVzLW1hc3RlciIsIm9mZmxpbmVfYWNjZXNzIiwiYWRtaW4iLCJ1bWFfYXV0aG9yaXphdGlvbiIsIkFETUlOIiwiVVNFUiIsIkRPQ1RPUiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImRydWctc3lzdGVtIjp7InJvbGVzIjpbIlBIQVJNQUNJU1QiLCJBRE1JTiIsIlVTRVIiLCJET0NUT1IiXX0sIm1hc3Rlci1yZWFsbSI6eyJyb2xlcyI6WyJ2aWV3LXJlYWxtIiwidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsImNyZWF0ZS1jbGllbnQiLCJtYW5hZ2UtdXNlcnMiLCJxdWVyeS1yZWFsbXMiLCJ2aWV3LWF1dGhvcml6YXRpb24iLCJxdWVyeS1jbGllbnRzIiwicXVlcnktdXNlcnMiLCJtYW5hZ2UtZXZlbnRzIiwibWFuYWdlLXJlYWxtIiwidmlldy1ldmVudHMiLCJ2aWV3LXVzZXJzIiwidmlldy1jbGllbnRzIiwibWFuYWdlLWF1dGhvcml6YXRpb24iLCJtYW5hZ2UtY2xpZW50cyIsInF1ZXJ5LWdyb3VwcyJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjBjNGFhZmNiLWE3OGEtNDViMC1iYjIzLTk4Y2QxYmEyODdjMyIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ2YWxlbnRpbmEiLCJlbWFpbCI6ImFzdGFmaTk4QG1haWwucnUifQ.sNcynmjL737_QFWKIbteeYE8IB2h8wALtKNtf8Sq5ed7OD35zGHHbwaaUUkw4ftB7fRxrwDQYz9XCz0SnoreBAu_KlsJCguE-wHvtJYkTV2_u1ETcQd_JZNsNxjPTZqc8HQi_gwPT3ERfED00LmXCfcZVjEq2XH941i4E3VJeVlg2oehguYM0DT3wNncYbsubEmnhqXRdKgwkudsfUiEyjEYMysWR94fxpqTVp8SA4D-WTSel5xCoJ9ux7gXW6b0So7N2zCVbUuSM3fCkYJO23SyXax7f6nLpfBQRAlkuETp8WOySoYDNzJZswUPCv9HYSb1n1iMaHnYvWND8VneFQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/stock-service/pharmacist/approve/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"stock-service",
+								"pharmacist",
+								"approve",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Pharmacist Info by ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4cldUUGdaTkR5V3RSaVIybkR0NVhZa3dQQmhVNk94VC0yQUZuN2dEUDhnIn0.eyJleHAiOjE3MTU5ODgzODcsImlhdCI6MTcxNTk1MjM4NywianRpIjoiY2ZjMWY4ZjctNGQzMy00YmNlLWIxYTYtOTgwMjAxMDQxZmU1IiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwL3JlYWxtcy9tYXN0ZXIiLCJhdWQiOlsibWFzdGVyLXJlYWxtIiwiYWNjb3VudCJdLCJzdWIiOiI0YThmMmMzYy02YzZkLTQ5ZTEtYTgwYy1hMjFmODczYzAxN2MiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJkcnVnLXN5c3RlbSIsInNlc3Npb25fc3RhdGUiOiIwYzRhYWZjYi1hNzhhLTQ1YjAtYmIyMy05OGNkMWJhMjg3YzMiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImNyZWF0ZS1yZWFsbSIsIlBIQVJNQUNJU1QiLCJkZWZhdWx0LXJvbGVzLW1hc3RlciIsIm9mZmxpbmVfYWNjZXNzIiwiYWRtaW4iLCJ1bWFfYXV0aG9yaXphdGlvbiIsIkFETUlOIiwiVVNFUiIsIkRPQ1RPUiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImRydWctc3lzdGVtIjp7InJvbGVzIjpbIlBIQVJNQUNJU1QiLCJBRE1JTiIsIlVTRVIiLCJET0NUT1IiXX0sIm1hc3Rlci1yZWFsbSI6eyJyb2xlcyI6WyJ2aWV3LXJlYWxtIiwidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsImNyZWF0ZS1jbGllbnQiLCJtYW5hZ2UtdXNlcnMiLCJxdWVyeS1yZWFsbXMiLCJ2aWV3LWF1dGhvcml6YXRpb24iLCJxdWVyeS1jbGllbnRzIiwicXVlcnktdXNlcnMiLCJtYW5hZ2UtZXZlbnRzIiwibWFuYWdlLXJlYWxtIiwidmlldy1ldmVudHMiLCJ2aWV3LXVzZXJzIiwidmlldy1jbGllbnRzIiwibWFuYWdlLWF1dGhvcml6YXRpb24iLCJtYW5hZ2UtY2xpZW50cyIsInF1ZXJ5LWdyb3VwcyJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjBjNGFhZmNiLWE3OGEtNDViMC1iYjIzLTk4Y2QxYmEyODdjMyIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ2YWxlbnRpbmEiLCJlbWFpbCI6ImFzdGFmaTk4QG1haWwucnUifQ.sNcynmjL737_QFWKIbteeYE8IB2h8wALtKNtf8Sq5ed7OD35zGHHbwaaUUkw4ftB7fRxrwDQYz9XCz0SnoreBAu_KlsJCguE-wHvtJYkTV2_u1ETcQd_JZNsNxjPTZqc8HQi_gwPT3ERfED00LmXCfcZVjEq2XH941i4E3VJeVlg2oehguYM0DT3wNncYbsubEmnhqXRdKgwkudsfUiEyjEYMysWR94fxpqTVp8SA4D-WTSel5xCoJ9ux7gXW6b0So7N2zCVbUuSM3fCkYJO23SyXax7f6nLpfBQRAlkuETp8WOySoYDNzJZswUPCv9HYSb1n1iMaHnYvWND8VneFQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/stock-service/pharmacist/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"stock-service",
+								"pharmacist",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Prescription",
+			"item": [
+				{
+					"name": "Create prescriptions",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4cldUUGdaTkR5V3RSaVIybkR0NVhZa3dQQmhVNk94VC0yQUZuN2dEUDhnIn0.eyJleHAiOjE3MTU5ODgzODcsImlhdCI6MTcxNTk1MjM4NywianRpIjoiY2ZjMWY4ZjctNGQzMy00YmNlLWIxYTYtOTgwMjAxMDQxZmU1IiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwL3JlYWxtcy9tYXN0ZXIiLCJhdWQiOlsibWFzdGVyLXJlYWxtIiwiYWNjb3VudCJdLCJzdWIiOiI0YThmMmMzYy02YzZkLTQ5ZTEtYTgwYy1hMjFmODczYzAxN2MiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJkcnVnLXN5c3RlbSIsInNlc3Npb25fc3RhdGUiOiIwYzRhYWZjYi1hNzhhLTQ1YjAtYmIyMy05OGNkMWJhMjg3YzMiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImNyZWF0ZS1yZWFsbSIsIlBIQVJNQUNJU1QiLCJkZWZhdWx0LXJvbGVzLW1hc3RlciIsIm9mZmxpbmVfYWNjZXNzIiwiYWRtaW4iLCJ1bWFfYXV0aG9yaXphdGlvbiIsIkFETUlOIiwiVVNFUiIsIkRPQ1RPUiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImRydWctc3lzdGVtIjp7InJvbGVzIjpbIlBIQVJNQUNJU1QiLCJBRE1JTiIsIlVTRVIiLCJET0NUT1IiXX0sIm1hc3Rlci1yZWFsbSI6eyJyb2xlcyI6WyJ2aWV3LXJlYWxtIiwidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsImNyZWF0ZS1jbGllbnQiLCJtYW5hZ2UtdXNlcnMiLCJxdWVyeS1yZWFsbXMiLCJ2aWV3LWF1dGhvcml6YXRpb24iLCJxdWVyeS1jbGllbnRzIiwicXVlcnktdXNlcnMiLCJtYW5hZ2UtZXZlbnRzIiwibWFuYWdlLXJlYWxtIiwidmlldy1ldmVudHMiLCJ2aWV3LXVzZXJzIiwidmlldy1jbGllbnRzIiwibWFuYWdlLWF1dGhvcml6YXRpb24iLCJtYW5hZ2UtY2xpZW50cyIsInF1ZXJ5LWdyb3VwcyJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjBjNGFhZmNiLWE3OGEtNDViMC1iYjIzLTk4Y2QxYmEyODdjMyIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ2YWxlbnRpbmEiLCJlbWFpbCI6ImFzdGFmaTk4QG1haWwucnUifQ.sNcynmjL737_QFWKIbteeYE8IB2h8wALtKNtf8Sq5ed7OD35zGHHbwaaUUkw4ftB7fRxrwDQYz9XCz0SnoreBAu_KlsJCguE-wHvtJYkTV2_u1ETcQd_JZNsNxjPTZqc8HQi_gwPT3ERfED00LmXCfcZVjEq2XH941i4E3VJeVlg2oehguYM0DT3wNncYbsubEmnhqXRdKgwkudsfUiEyjEYMysWR94fxpqTVp8SA4D-WTSel5xCoJ9ux7gXW6b0So7N2zCVbUuSM3fCkYJO23SyXax7f6nLpfBQRAlkuETp8WOySoYDNzJZswUPCv9HYSb1n1iMaHnYvWND8VneFQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"series\": \"dsbcs\",\n    \"number\": 1,\n    \"cui\": \"Bf47589\",\n    \"validityDays\": 10,\n    \"patient\": {\n        \"id\": 7\n    },\n    \"prescriptionDrugs\": [\n        {\n            \"name\": \"Iod\",\n            \"manufacturer\": \"Slovacia farma\",\n            \"activeSubstance\": \"Iod\",\n            \"administrationMethod\": \"test\",\n            \"dosage\": 34.6\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/prescription-service/prescription/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"prescription-service",
+								"prescription",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Prescription by ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4cldUUGdaTkR5V3RSaVIybkR0NVhZa3dQQmhVNk94VC0yQUZuN2dEUDhnIn0.eyJleHAiOjE3MTU5ODg4MTQsImlhdCI6MTcxNTk1MjgxNCwianRpIjoiODJkMzRhZGYtZGJhMC00YTI2LWI0N2YtOTMyNGNjZDM4MDRlIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwL3JlYWxtcy9tYXN0ZXIiLCJhdWQiOlsibWFzdGVyLXJlYWxtIiwiYWNjb3VudCJdLCJzdWIiOiI0YThmMmMzYy02YzZkLTQ5ZTEtYTgwYy1hMjFmODczYzAxN2MiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJkcnVnLXN5c3RlbSIsInNlc3Npb25fc3RhdGUiOiI3ZTk0N2NhMS03NGFhLTRhNTktOTA3MS1iYjQyZDYwNjIwNGUiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImNyZWF0ZS1yZWFsbSIsIlBIQVJNQUNJU1QiLCJkZWZhdWx0LXJvbGVzLW1hc3RlciIsIm9mZmxpbmVfYWNjZXNzIiwiYWRtaW4iLCJ1bWFfYXV0aG9yaXphdGlvbiIsIkFETUlOIiwiVVNFUiIsIkRPQ1RPUiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImRydWctc3lzdGVtIjp7InJvbGVzIjpbIlBIQVJNQUNJU1QiLCJBRE1JTiIsIlVTRVIiLCJET0NUT1IiXX0sIm1hc3Rlci1yZWFsbSI6eyJyb2xlcyI6WyJ2aWV3LXJlYWxtIiwidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsImNyZWF0ZS1jbGllbnQiLCJtYW5hZ2UtdXNlcnMiLCJxdWVyeS1yZWFsbXMiLCJ2aWV3LWF1dGhvcml6YXRpb24iLCJxdWVyeS1jbGllbnRzIiwicXVlcnktdXNlcnMiLCJtYW5hZ2UtZXZlbnRzIiwibWFuYWdlLXJlYWxtIiwidmlldy1ldmVudHMiLCJ2aWV3LXVzZXJzIiwidmlldy1jbGllbnRzIiwibWFuYWdlLWF1dGhvcml6YXRpb24iLCJtYW5hZ2UtY2xpZW50cyIsInF1ZXJ5LWdyb3VwcyJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjdlOTQ3Y2ExLTc0YWEtNGE1OS05MDcxLWJiNDJkNjA2MjA0ZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ2YWxlbnRpbmEiLCJlbWFpbCI6ImFzdGFmaTk4QG1haWwucnUifQ.RcaTBLZOL210w4QadANN69F6eMcibrRTZK42XiWfCEvw5eDqtLQ3jv8he5c_mcxyIfLu4tS02AkSEKmTMmTJ__kpxfOocujDJa2tbsEav7a1rq3d8OLuEVhatmaQ9U5bvCDC5PV01zd2rONjYvinbhUMG7jv7slILvZKJPwRCU9pbpM-994kjmuOoWdz6gHQF1HpxVXAJGR-r5DfJ0oKZkDPA5Dlgg7cpzDXmpEhxd5us68B1HTAjMLhpRNcXQy3mImmISK42-th-9kFhNbH7uFN0i2CojG3VP9Lgd6qqBHj5KuvU8guu7uoi1ePZ22Q6H1LjX2mv6Yg9lZExx21TQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/prescription-service/prescription/15",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"prescription-service",
+								"prescription",
+								"15"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Prescription",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4cldUUGdaTkR5V3RSaVIybkR0NVhZa3dQQmhVNk94VC0yQUZuN2dEUDhnIn0.eyJleHAiOjE3MTU5ODg4MTQsImlhdCI6MTcxNTk1MjgxNCwianRpIjoiODJkMzRhZGYtZGJhMC00YTI2LWI0N2YtOTMyNGNjZDM4MDRlIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwL3JlYWxtcy9tYXN0ZXIiLCJhdWQiOlsibWFzdGVyLXJlYWxtIiwiYWNjb3VudCJdLCJzdWIiOiI0YThmMmMzYy02YzZkLTQ5ZTEtYTgwYy1hMjFmODczYzAxN2MiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJkcnVnLXN5c3RlbSIsInNlc3Npb25fc3RhdGUiOiI3ZTk0N2NhMS03NGFhLTRhNTktOTA3MS1iYjQyZDYwNjIwNGUiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImNyZWF0ZS1yZWFsbSIsIlBIQVJNQUNJU1QiLCJkZWZhdWx0LXJvbGVzLW1hc3RlciIsIm9mZmxpbmVfYWNjZXNzIiwiYWRtaW4iLCJ1bWFfYXV0aG9yaXphdGlvbiIsIkFETUlOIiwiVVNFUiIsIkRPQ1RPUiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImRydWctc3lzdGVtIjp7InJvbGVzIjpbIlBIQVJNQUNJU1QiLCJBRE1JTiIsIlVTRVIiLCJET0NUT1IiXX0sIm1hc3Rlci1yZWFsbSI6eyJyb2xlcyI6WyJ2aWV3LXJlYWxtIiwidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsImNyZWF0ZS1jbGllbnQiLCJtYW5hZ2UtdXNlcnMiLCJxdWVyeS1yZWFsbXMiLCJ2aWV3LWF1dGhvcml6YXRpb24iLCJxdWVyeS1jbGllbnRzIiwicXVlcnktdXNlcnMiLCJtYW5hZ2UtZXZlbnRzIiwibWFuYWdlLXJlYWxtIiwidmlldy1ldmVudHMiLCJ2aWV3LXVzZXJzIiwidmlldy1jbGllbnRzIiwibWFuYWdlLWF1dGhvcml6YXRpb24iLCJtYW5hZ2UtY2xpZW50cyIsInF1ZXJ5LWdyb3VwcyJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjdlOTQ3Y2ExLTc0YWEtNGE1OS05MDcxLWJiNDJkNjA2MjA0ZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ2YWxlbnRpbmEiLCJlbWFpbCI6ImFzdGFmaTk4QG1haWwucnUifQ.RcaTBLZOL210w4QadANN69F6eMcibrRTZK42XiWfCEvw5eDqtLQ3jv8he5c_mcxyIfLu4tS02AkSEKmTMmTJ__kpxfOocujDJa2tbsEav7a1rq3d8OLuEVhatmaQ9U5bvCDC5PV01zd2rONjYvinbhUMG7jv7slILvZKJPwRCU9pbpM-994kjmuOoWdz6gHQF1HpxVXAJGR-r5DfJ0oKZkDPA5Dlgg7cpzDXmpEhxd5us68B1HTAjMLhpRNcXQy3mImmISK42-th-9kFhNbH7uFN0i2CojG3VP9Lgd6qqBHj5KuvU8guu7uoi1ePZ22Q6H1LjX2mv6Yg9lZExx21TQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \"id\": 15,\n    \"series\": \"dsbcs\",\n    \"number\": 12,\n    \"cui\": \"Bf47589\",\n    \"validityDays\": 10,\n    \"patient\": {\n        \"id\": 7\n    },\n    \"prescriptionDrugs\": [\n        {\n            \"name\": \"Iod\",\n            \"manufacturer\": \"Slovacia farma\",\n            \"activeSubstance\": \"Iod\",\n            \"administrationMethod\": \"test\",\n            \"dosage\": 34.6\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/prescription-service/prescription/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"prescription-service",
+								"prescription",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Activate Prescription",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4cldUUGdaTkR5V3RSaVIybkR0NVhZa3dQQmhVNk94VC0yQUZuN2dEUDhnIn0.eyJleHAiOjE3MTU5ODg4MTQsImlhdCI6MTcxNTk1MjgxNCwianRpIjoiODJkMzRhZGYtZGJhMC00YTI2LWI0N2YtOTMyNGNjZDM4MDRlIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwL3JlYWxtcy9tYXN0ZXIiLCJhdWQiOlsibWFzdGVyLXJlYWxtIiwiYWNjb3VudCJdLCJzdWIiOiI0YThmMmMzYy02YzZkLTQ5ZTEtYTgwYy1hMjFmODczYzAxN2MiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJkcnVnLXN5c3RlbSIsInNlc3Npb25fc3RhdGUiOiI3ZTk0N2NhMS03NGFhLTRhNTktOTA3MS1iYjQyZDYwNjIwNGUiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImNyZWF0ZS1yZWFsbSIsIlBIQVJNQUNJU1QiLCJkZWZhdWx0LXJvbGVzLW1hc3RlciIsIm9mZmxpbmVfYWNjZXNzIiwiYWRtaW4iLCJ1bWFfYXV0aG9yaXphdGlvbiIsIkFETUlOIiwiVVNFUiIsIkRPQ1RPUiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImRydWctc3lzdGVtIjp7InJvbGVzIjpbIlBIQVJNQUNJU1QiLCJBRE1JTiIsIlVTRVIiLCJET0NUT1IiXX0sIm1hc3Rlci1yZWFsbSI6eyJyb2xlcyI6WyJ2aWV3LXJlYWxtIiwidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsImNyZWF0ZS1jbGllbnQiLCJtYW5hZ2UtdXNlcnMiLCJxdWVyeS1yZWFsbXMiLCJ2aWV3LWF1dGhvcml6YXRpb24iLCJxdWVyeS1jbGllbnRzIiwicXVlcnktdXNlcnMiLCJtYW5hZ2UtZXZlbnRzIiwibWFuYWdlLXJlYWxtIiwidmlldy1ldmVudHMiLCJ2aWV3LXVzZXJzIiwidmlldy1jbGllbnRzIiwibWFuYWdlLWF1dGhvcml6YXRpb24iLCJtYW5hZ2UtY2xpZW50cyIsInF1ZXJ5LWdyb3VwcyJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjdlOTQ3Y2ExLTc0YWEtNGE1OS05MDcxLWJiNDJkNjA2MjA0ZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ2YWxlbnRpbmEiLCJlbWFpbCI6ImFzdGFmaTk4QG1haWwucnUifQ.RcaTBLZOL210w4QadANN69F6eMcibrRTZK42XiWfCEvw5eDqtLQ3jv8he5c_mcxyIfLu4tS02AkSEKmTMmTJ__kpxfOocujDJa2tbsEav7a1rq3d8OLuEVhatmaQ9U5bvCDC5PV01zd2rONjYvinbhUMG7jv7slILvZKJPwRCU9pbpM-994kjmuOoWdz6gHQF1HpxVXAJGR-r5DfJ0oKZkDPA5Dlgg7cpzDXmpEhxd5us68B1HTAjMLhpRNcXQy3mImmISK42-th-9kFhNbH7uFN0i2CojG3VP9Lgd6qqBHj5KuvU8guu7uoi1ePZ22Q6H1LjX2mv6Yg9lZExx21TQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/prescription-service/prescription/activate?id=15",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"prescription-service",
+								"prescription",
+								"activate"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "15"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cancel Prescription",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4cldUUGdaTkR5V3RSaVIybkR0NVhZa3dQQmhVNk94VC0yQUZuN2dEUDhnIn0.eyJleHAiOjE3MTU5ODg5MzYsImlhdCI6MTcxNTk1MjkzNiwianRpIjoiM2MxMDQzZWYtNjJiYi00YjhlLTllMDItYzIzYTI4NzcxN2VmIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwL3JlYWxtcy9tYXN0ZXIiLCJhdWQiOlsibWFzdGVyLXJlYWxtIiwiYWNjb3VudCJdLCJzdWIiOiI0YThmMmMzYy02YzZkLTQ5ZTEtYTgwYy1hMjFmODczYzAxN2MiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJkcnVnLXN5c3RlbSIsInNlc3Npb25fc3RhdGUiOiJhNDg3ZTVmMi1iMDFjLTRjZDgtYmRiNy1mODk4MmU4ZTRkMDgiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImNyZWF0ZS1yZWFsbSIsIlBIQVJNQUNJU1QiLCJkZWZhdWx0LXJvbGVzLW1hc3RlciIsIm9mZmxpbmVfYWNjZXNzIiwiYWRtaW4iLCJ1bWFfYXV0aG9yaXphdGlvbiIsIkFETUlOIiwiVVNFUiIsIkRPQ1RPUiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImRydWctc3lzdGVtIjp7InJvbGVzIjpbIlBIQVJNQUNJU1QiLCJBRE1JTiIsIlVTRVIiLCJET0NUT1IiXX0sIm1hc3Rlci1yZWFsbSI6eyJyb2xlcyI6WyJ2aWV3LXJlYWxtIiwidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsImNyZWF0ZS1jbGllbnQiLCJtYW5hZ2UtdXNlcnMiLCJxdWVyeS1yZWFsbXMiLCJ2aWV3LWF1dGhvcml6YXRpb24iLCJxdWVyeS1jbGllbnRzIiwicXVlcnktdXNlcnMiLCJtYW5hZ2UtZXZlbnRzIiwibWFuYWdlLXJlYWxtIiwidmlldy1ldmVudHMiLCJ2aWV3LXVzZXJzIiwidmlldy1jbGllbnRzIiwibWFuYWdlLWF1dGhvcml6YXRpb24iLCJtYW5hZ2UtY2xpZW50cyIsInF1ZXJ5LWdyb3VwcyJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6ImE0ODdlNWYyLWIwMWMtNGNkOC1iZGI3LWY4OTgyZThlNGQwOCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ2YWxlbnRpbmEiLCJlbWFpbCI6ImFzdGFmaTk4QG1haWwucnUifQ.vrS_-vRLgjg19vqBuy7wKXSPMzBdhYcuA1eI79g-IjHP33qwDeZEcikFeqHb6maI5MAhKzRKwvFPxqWHqwMZKXY5AW-muhFYWsTYZOsl5C6HWK7rQjii5lsbYrTrxBJhh5erf3UvWZdKTLkifTTWWtHSxUXpcYI9iN8VKak6lhpfaSgTuBBRWQGcP_13VTAJCPX0tgO7E9H2oDYLjT2Ut0H1NimzkfVDAsHnpmBLoEEzm20B-ei_uXam2WOOFXXMDg-BISm3li7UyyRZcFrrlsa4EhYHZy7CPlxeVH3KBJ-thqVwsyM7NELwEyBGfjxBd5VtYEUvq8HiXheQMTLe4w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/prescription-service/prescription/cancel?id=15",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"prescription-service",
+								"prescription",
+								"cancel"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "15"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Prescriptions",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4cldUUGdaTkR5V3RSaVIybkR0NVhZa3dQQmhVNk94VC0yQUZuN2dEUDhnIn0.eyJleHAiOjE3MTU5ODg5MzYsImlhdCI6MTcxNTk1MjkzNiwianRpIjoiM2MxMDQzZWYtNjJiYi00YjhlLTllMDItYzIzYTI4NzcxN2VmIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwL3JlYWxtcy9tYXN0ZXIiLCJhdWQiOlsibWFzdGVyLXJlYWxtIiwiYWNjb3VudCJdLCJzdWIiOiI0YThmMmMzYy02YzZkLTQ5ZTEtYTgwYy1hMjFmODczYzAxN2MiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJkcnVnLXN5c3RlbSIsInNlc3Npb25fc3RhdGUiOiJhNDg3ZTVmMi1iMDFjLTRjZDgtYmRiNy1mODk4MmU4ZTRkMDgiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImNyZWF0ZS1yZWFsbSIsIlBIQVJNQUNJU1QiLCJkZWZhdWx0LXJvbGVzLW1hc3RlciIsIm9mZmxpbmVfYWNjZXNzIiwiYWRtaW4iLCJ1bWFfYXV0aG9yaXphdGlvbiIsIkFETUlOIiwiVVNFUiIsIkRPQ1RPUiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImRydWctc3lzdGVtIjp7InJvbGVzIjpbIlBIQVJNQUNJU1QiLCJBRE1JTiIsIlVTRVIiLCJET0NUT1IiXX0sIm1hc3Rlci1yZWFsbSI6eyJyb2xlcyI6WyJ2aWV3LXJlYWxtIiwidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsImNyZWF0ZS1jbGllbnQiLCJtYW5hZ2UtdXNlcnMiLCJxdWVyeS1yZWFsbXMiLCJ2aWV3LWF1dGhvcml6YXRpb24iLCJxdWVyeS1jbGllbnRzIiwicXVlcnktdXNlcnMiLCJtYW5hZ2UtZXZlbnRzIiwibWFuYWdlLXJlYWxtIiwidmlldy1ldmVudHMiLCJ2aWV3LXVzZXJzIiwidmlldy1jbGllbnRzIiwibWFuYWdlLWF1dGhvcml6YXRpb24iLCJtYW5hZ2UtY2xpZW50cyIsInF1ZXJ5LWdyb3VwcyJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6ImE0ODdlNWYyLWIwMWMtNGNkOC1iZGI3LWY4OTgyZThlNGQwOCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ2YWxlbnRpbmEiLCJlbWFpbCI6ImFzdGFmaTk4QG1haWwucnUifQ.vrS_-vRLgjg19vqBuy7wKXSPMzBdhYcuA1eI79g-IjHP33qwDeZEcikFeqHb6maI5MAhKzRKwvFPxqWHqwMZKXY5AW-muhFYWsTYZOsl5C6HWK7rQjii5lsbYrTrxBJhh5erf3UvWZdKTLkifTTWWtHSxUXpcYI9iN8VKak6lhpfaSgTuBBRWQGcP_13VTAJCPX0tgO7E9H2oDYLjT2Ut0H1NimzkfVDAsHnpmBLoEEzm20B-ei_uXam2WOOFXXMDg-BISm3li7UyyRZcFrrlsa4EhYHZy7CPlxeVH3KBJ-thqVwsyM7NELwEyBGfjxBd5VtYEUvq8HiXheQMTLe4w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/prescription-service/prescription/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"prescription-service",
+								"prescription",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Release drug",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4cldUUGdaTkR5V3RSaVIybkR0NVhZa3dQQmhVNk94VC0yQUZuN2dEUDhnIn0.eyJleHAiOjE3MTYwNjA5NTAsImlhdCI6MTcxNjAyNDk1MCwianRpIjoiZmVkN2EyYWQtNTRlMy00ODk3LWI3MzMtMjYxY2MxMzk5NWFhIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwL3JlYWxtcy9tYXN0ZXIiLCJhdWQiOlsibWFzdGVyLXJlYWxtIiwiYWNjb3VudCJdLCJzdWIiOiI0YThmMmMzYy02YzZkLTQ5ZTEtYTgwYy1hMjFmODczYzAxN2MiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJkcnVnLXN5c3RlbSIsInNlc3Npb25fc3RhdGUiOiI1OWExY2MyZi02NmU5LTRhMTktOTRmOC0xMDZkNzg4ZDJmYmMiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImNyZWF0ZS1yZWFsbSIsIlBIQVJNQUNJU1QiLCJkZWZhdWx0LXJvbGVzLW1hc3RlciIsIm9mZmxpbmVfYWNjZXNzIiwiYWRtaW4iLCJ1bWFfYXV0aG9yaXphdGlvbiIsIkFETUlOIiwiVVNFUiIsIkRPQ1RPUiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImRydWctc3lzdGVtIjp7InJvbGVzIjpbIlBIQVJNQUNJU1QiLCJBRE1JTiIsIlVTRVIiLCJET0NUT1IiXX0sIm1hc3Rlci1yZWFsbSI6eyJyb2xlcyI6WyJ2aWV3LXJlYWxtIiwidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsImNyZWF0ZS1jbGllbnQiLCJtYW5hZ2UtdXNlcnMiLCJxdWVyeS1yZWFsbXMiLCJ2aWV3LWF1dGhvcml6YXRpb24iLCJxdWVyeS1jbGllbnRzIiwicXVlcnktdXNlcnMiLCJtYW5hZ2UtZXZlbnRzIiwibWFuYWdlLXJlYWxtIiwidmlldy1ldmVudHMiLCJ2aWV3LXVzZXJzIiwidmlldy1jbGllbnRzIiwibWFuYWdlLWF1dGhvcml6YXRpb24iLCJtYW5hZ2UtY2xpZW50cyIsInF1ZXJ5LWdyb3VwcyJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjU5YTFjYzJmLTY2ZTktNGExOS05NGY4LTEwNmQ3ODhkMmZiYyIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ2YWxlbnRpbmEiLCJlbWFpbCI6ImFzdGFmaTk4QG1haWwucnUifQ.N0BCxgPoTDDTnMlDSn_kT9EivIRIcy4eWTJt7H0KqAVjjVVvhG9YKGaWu6yrS6-bqoMowRecSj1xg_1kazz4Ma5uQ8H9cCVufdWNwveP3dpbQU0dTy2LnGBZM7z5EoAMFyzVN-6aXoxgMn5QwWNk5SYstlTS0VHKMElZ7XIbj_XzfEw1bLiAAX9Zc_B20lzH-HJqNx-Eeg7HTuXRE90qo356DKyOHsQOvGqwm3ckXb3uDW1JXQbCbdej_Ptp9OMA0rQJtmc_xBL0IXa885LspT5If5HC0TvwkirLaerbueS96ngIlh0ANA2XTe5pRZIMmMQVXicSIppYYM8wInNFHA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/prescription-service/prescription/release-drug?id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"prescription-service",
+								"prescription",
+								"release-drug"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Drug",
+			"item": [
+				{
+					"name": "Get Drug by ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4cldUUGdaTkR5V3RSaVIybkR0NVhZa3dQQmhVNk94VC0yQUZuN2dEUDhnIn0.eyJleHAiOjE3MTYwNjA0OTMsImlhdCI6MTcxNjAyNDQ5MywianRpIjoiM2M5YjM2MjAtMWY5Mi00YWIxLTljY2ItNzNhNjJjNjhhYzcwIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwL3JlYWxtcy9tYXN0ZXIiLCJhdWQiOlsibWFzdGVyLXJlYWxtIiwiYWNjb3VudCJdLCJzdWIiOiI0YThmMmMzYy02YzZkLTQ5ZTEtYTgwYy1hMjFmODczYzAxN2MiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJkcnVnLXN5c3RlbSIsInNlc3Npb25fc3RhdGUiOiI2YWE2ODQ1NC1kNTgyLTRkZGQtOGE2Yi1jMTk2ODY3MDJkODIiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImNyZWF0ZS1yZWFsbSIsIlBIQVJNQUNJU1QiLCJkZWZhdWx0LXJvbGVzLW1hc3RlciIsIm9mZmxpbmVfYWNjZXNzIiwiYWRtaW4iLCJ1bWFfYXV0aG9yaXphdGlvbiIsIkFETUlOIiwiVVNFUiIsIkRPQ1RPUiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImRydWctc3lzdGVtIjp7InJvbGVzIjpbIlBIQVJNQUNJU1QiLCJBRE1JTiIsIlVTRVIiLCJET0NUT1IiXX0sIm1hc3Rlci1yZWFsbSI6eyJyb2xlcyI6WyJ2aWV3LXJlYWxtIiwidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsImNyZWF0ZS1jbGllbnQiLCJtYW5hZ2UtdXNlcnMiLCJxdWVyeS1yZWFsbXMiLCJ2aWV3LWF1dGhvcml6YXRpb24iLCJxdWVyeS1jbGllbnRzIiwicXVlcnktdXNlcnMiLCJtYW5hZ2UtZXZlbnRzIiwibWFuYWdlLXJlYWxtIiwidmlldy1ldmVudHMiLCJ2aWV3LXVzZXJzIiwidmlldy1jbGllbnRzIiwibWFuYWdlLWF1dGhvcml6YXRpb24iLCJtYW5hZ2UtY2xpZW50cyIsInF1ZXJ5LWdyb3VwcyJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjZhYTY4NDU0LWQ1ODItNGRkZC04YTZiLWMxOTY4NjcwMmQ4MiIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ2YWxlbnRpbmEiLCJlbWFpbCI6ImFzdGFmaTk4QG1haWwucnUifQ.0Ajya9x7p6S-wO_FBT7nHsc_0fn6JPylAdd7TPYsDstXb5xzoTDoQ89gwDL0iB8PY2KYEpz00ko1QJ4wy3iNyLSnAYneBeGslixW3nPBlzBrHgWr2jJ7dzBc49RJ8-tVytWoQotrT8UuxjgcNRDCVKeZMNtIy-PTcdBDgC82T8Mp0_NTQWrk4PN9SnMs32DNyz9sJTHZSA0Ajh1rAcLtPOHRfAiIBYK1tUm6wz7yi1xSBUp8fKmKIKn35IV00UlpMr_ETAxzI1VcC_j4O9YK1eEi_-cc4dqIJh5bKV49k2BAZU9MjtdHDWGnuclhDC50fuRNdE5H_YKpavFc4b4yXQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/stock-service/drug/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"stock-service",
+								"drug",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Drug Suggestions",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJ2aWprVUdwQUNCSzg1VUpJMEQ5QTY0ZGRlaFlXWDJ4aXBvWER5N0E3N0NNIn0.eyJleHAiOjE3MTU4ODQyOTksImlhdCI6MTcxNTg4NDIzOSwianRpIjoiNWJmY2E0ZDAtMzVlMS00M2MxLWJkYzMtZTVjN2EyODYxMTFmIiwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6OTAwMC9yZWFsbXMvbWFzdGVyIiwiYXVkIjpbIm1hc3Rlci1yZWFsbSIsImFjY291bnQiXSwic3ViIjoiYmU2YTA2OWMtZWYxZi00OGJkLWFiYWItMDNlODQzYWNhNjg0IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiZHJ1Zy1zeXN0ZW0iLCJzZXNzaW9uX3N0YXRlIjoiMjI5M2U0OTctZTVmZi00MGNhLWE4Y2YtNmVlM2YyNWZhZGE4IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyIqIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJjcmVhdGUtcmVhbG0iLCJkZWZhdWx0LXJvbGVzLW1hc3RlciIsIm9mZmxpbmVfYWNjZXNzIiwiYWRtaW4iLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7Im1hc3Rlci1yZWFsbSI6eyJyb2xlcyI6WyJ2aWV3LXJlYWxtIiwidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsImNyZWF0ZS1jbGllbnQiLCJtYW5hZ2UtdXNlcnMiLCJxdWVyeS1yZWFsbXMiLCJ2aWV3LWF1dGhvcml6YXRpb24iLCJxdWVyeS1jbGllbnRzIiwicXVlcnktdXNlcnMiLCJtYW5hZ2UtZXZlbnRzIiwibWFuYWdlLXJlYWxtIiwidmlldy1ldmVudHMiLCJ2aWV3LXVzZXJzIiwidmlldy1jbGllbnRzIiwibWFuYWdlLWF1dGhvcml6YXRpb24iLCJtYW5hZ2UtY2xpZW50cyIsInF1ZXJ5LWdyb3VwcyJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjIyOTNlNDk3LWU1ZmYtNDBjYS1hOGNmLTZlZTNmMjVmYWRhOCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoidmFsZW50aW5hIn0.bM3iC8I4dl9CeapNGl2qPiu0VmHmjEskiRhqx5mzMArbZOVhiceT9pILaLYqZnLYHPVFo2bnKczMG4vmeyCn18nnOAREm5ftJsIYsu4vy4-IQ_wSB-1pnYXCqOum6rh2Yq69adogQnV0xvWGDuA4lHZA-xOmMcBKWKC_9NroD-H4BU-dy4yQbQWm31vbzMt14Y9Mq_eTiJYayLKVWHlO32psI7GNz_vxBEOl2IE6YnP4tQn_SZk1KHG0g51jrnH5ZK64PUSQQiWCGEPARHUFW7bRQkVUp309IDIFe_WRBV4XteWL39udHV-4Ysm6-fI9lH2uFOIixXRmFQmlTDP-1w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/stock-service/drug/suggestions?name=DrugName",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"stock-service",
+								"drug",
+								"suggestions"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "DrugName"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create or Update Drug Stock",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4cldUUGdaTkR5V3RSaVIybkR0NVhZa3dQQmhVNk94VC0yQUZuN2dEUDhnIn0.eyJleHAiOjE3MTYwNjA0OTMsImlhdCI6MTcxNjAyNDQ5MywianRpIjoiM2M5YjM2MjAtMWY5Mi00YWIxLTljY2ItNzNhNjJjNjhhYzcwIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwL3JlYWxtcy9tYXN0ZXIiLCJhdWQiOlsibWFzdGVyLXJlYWxtIiwiYWNjb3VudCJdLCJzdWIiOiI0YThmMmMzYy02YzZkLTQ5ZTEtYTgwYy1hMjFmODczYzAxN2MiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJkcnVnLXN5c3RlbSIsInNlc3Npb25fc3RhdGUiOiI2YWE2ODQ1NC1kNTgyLTRkZGQtOGE2Yi1jMTk2ODY3MDJkODIiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImNyZWF0ZS1yZWFsbSIsIlBIQVJNQUNJU1QiLCJkZWZhdWx0LXJvbGVzLW1hc3RlciIsIm9mZmxpbmVfYWNjZXNzIiwiYWRtaW4iLCJ1bWFfYXV0aG9yaXphdGlvbiIsIkFETUlOIiwiVVNFUiIsIkRPQ1RPUiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImRydWctc3lzdGVtIjp7InJvbGVzIjpbIlBIQVJNQUNJU1QiLCJBRE1JTiIsIlVTRVIiLCJET0NUT1IiXX0sIm1hc3Rlci1yZWFsbSI6eyJyb2xlcyI6WyJ2aWV3LXJlYWxtIiwidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsImNyZWF0ZS1jbGllbnQiLCJtYW5hZ2UtdXNlcnMiLCJxdWVyeS1yZWFsbXMiLCJ2aWV3LWF1dGhvcml6YXRpb24iLCJxdWVyeS1jbGllbnRzIiwicXVlcnktdXNlcnMiLCJtYW5hZ2UtZXZlbnRzIiwibWFuYWdlLXJlYWxtIiwidmlldy1ldmVudHMiLCJ2aWV3LXVzZXJzIiwidmlldy1jbGllbnRzIiwibWFuYWdlLWF1dGhvcml6YXRpb24iLCJtYW5hZ2UtY2xpZW50cyIsInF1ZXJ5LWdyb3VwcyJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjZhYTY4NDU0LWQ1ODItNGRkZC04YTZiLWMxOTY4NjcwMmQ4MiIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ2YWxlbnRpbmEiLCJlbWFpbCI6ImFzdGFmaTk4QG1haWwucnUifQ.0Ajya9x7p6S-wO_FBT7nHsc_0fn6JPylAdd7TPYsDstXb5xzoTDoQ89gwDL0iB8PY2KYEpz00ko1QJ4wy3iNyLSnAYneBeGslixW3nPBlzBrHgWr2jJ7dzBc49RJ8-tVytWoQotrT8UuxjgcNRDCVKeZMNtIy-PTcdBDgC82T8Mp0_NTQWrk4PN9SnMs32DNyz9sJTHZSA0Ajh1rAcLtPOHRfAiIBYK1tUm6wz7yi1xSBUp8fKmKIKn35IV00UlpMr_ETAxzI1VcC_j4O9YK1eEi_-cc4dqIJh5bKV49k2BAZU9MjtdHDWGnuclhDC50fuRNdE5H_YKpavFc4b4yXQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Aspirin\"\n}\n\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/stock-service/drug",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"stock-service",
+								"drug"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Drug Stock Details by ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJ2aWprVUdwQUNCSzg1VUpJMEQ5QTY0ZGRlaFlXWDJ4aXBvWER5N0E3N0NNIn0.eyJleHAiOjE3MTU4ODQyOTksImlhdCI6MTcxNTg4NDIzOSwianRpIjoiNWJmY2E0ZDAtMzVlMS00M2MxLWJkYzMtZTVjN2EyODYxMTFmIiwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6OTAwMC9yZWFsbXMvbWFzdGVyIiwiYXVkIjpbIm1hc3Rlci1yZWFsbSIsImFjY291bnQiXSwic3ViIjoiYmU2YTA2OWMtZWYxZi00OGJkLWFiYWItMDNlODQzYWNhNjg0IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiZHJ1Zy1zeXN0ZW0iLCJzZXNzaW9uX3N0YXRlIjoiMjI5M2U0OTctZTVmZi00MGNhLWE4Y2YtNmVlM2YyNWZhZGE4IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyIqIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJjcmVhdGUtcmVhbG0iLCJkZWZhdWx0LXJvbGVzLW1hc3RlciIsIm9mZmxpbmVfYWNjZXNzIiwiYWRtaW4iLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7Im1hc3Rlci1yZWFsbSI6eyJyb2xlcyI6WyJ2aWV3LXJlYWxtIiwidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsImNyZWF0ZS1jbGllbnQiLCJtYW5hZ2UtdXNlcnMiLCJxdWVyeS1yZWFsbXMiLCJ2aWV3LWF1dGhvcml6YXRpb24iLCJxdWVyeS1jbGllbnRzIiwicXVlcnktdXNlcnMiLCJtYW5hZ2UtZXZlbnRzIiwibWFuYWdlLXJlYWxtIiwidmlldy1ldmVudHMiLCJ2aWV3LXVzZXJzIiwidmlldy1jbGllbnRzIiwibWFuYWdlLWF1dGhvcml6YXRpb24iLCJtYW5hZ2UtY2xpZW50cyIsInF1ZXJ5LWdyb3VwcyJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjIyOTNlNDk3LWU1ZmYtNDBjYS1hOGNmLTZlZTNmMjVmYWRhOCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoidmFsZW50aW5hIn0.bM3iC8I4dl9CeapNGl2qPiu0VmHmjEskiRhqx5mzMArbZOVhiceT9pILaLYqZnLYHPVFo2bnKczMG4vmeyCn18nnOAREm5ftJsIYsu4vy4-IQ_wSB-1pnYXCqOum6rh2Yq69adogQnV0xvWGDuA4lHZA-xOmMcBKWKC_9NroD-H4BU-dy4yQbQWm31vbzMt14Y9Mq_eTiJYayLKVWHlO32psI7GNz_vxBEOl2IE6YnP4tQn_SZk1KHG0g51jrnH5ZK64PUSQQiWCGEPARHUFW7bRQkVUp309IDIFe_WRBV4XteWL39udHV-4Ysm6-fI9lH2uFOIixXRmFQmlTDP-1w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/stock-service/drug/details/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"stock-service",
+								"drug",
+								"details",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Release Drug Prescription",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJ2aWprVUdwQUNCSzg1VUpJMEQ5QTY0ZGRlaFlXWDJ4aXBvWER5N0E3N0NNIn0.eyJleHAiOjE3MTU4ODQyOTksImlhdCI6MTcxNTg4NDIzOSwianRpIjoiNWJmY2E0ZDAtMzVlMS00M2MxLWJkYzMtZTVjN2EyODYxMTFmIiwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6OTAwMC9yZWFsbXMvbWFzdGVyIiwiYXVkIjpbIm1hc3Rlci1yZWFsbSIsImFjY291bnQiXSwic3ViIjoiYmU2YTA2OWMtZWYxZi00OGJkLWFiYWItMDNlODQzYWNhNjg0IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiZHJ1Zy1zeXN0ZW0iLCJzZXNzaW9uX3N0YXRlIjoiMjI5M2U0OTctZTVmZi00MGNhLWE4Y2YtNmVlM2YyNWZhZGE4IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyIqIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJjcmVhdGUtcmVhbG0iLCJkZWZhdWx0LXJvbGVzLW1hc3RlciIsIm9mZmxpbmVfYWNjZXNzIiwiYWRtaW4iLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7Im1hc3Rlci1yZWFsbSI6eyJyb2xlcyI6WyJ2aWV3LXJlYWxtIiwidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsImNyZWF0ZS1jbGllbnQiLCJtYW5hZ2UtdXNlcnMiLCJxdWVyeS1yZWFsbXMiLCJ2aWV3LWF1dGhvcml6YXRpb24iLCJxdWVyeS1jbGllbnRzIiwicXVlcnktdXNlcnMiLCJtYW5hZ2UtZXZlbnRzIiwibWFuYWdlLXJlYWxtIiwidmlldy1ldmVudHMiLCJ2aWV3LXVzZXJzIiwidmlldy1jbGllbnRzIiwibWFuYWdlLWF1dGhvcml6YXRpb24iLCJtYW5hZ2UtY2xpZW50cyIsInF1ZXJ5LWdyb3VwcyJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjIyOTNlNDk3LWU1ZmYtNDBjYS1hOGNmLTZlZTNmMjVmYWRhOCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoidmFsZW50aW5hIn0.bM3iC8I4dl9CeapNGl2qPiu0VmHmjEskiRhqx5mzMArbZOVhiceT9pILaLYqZnLYHPVFo2bnKczMG4vmeyCn18nnOAREm5ftJsIYsu4vy4-IQ_wSB-1pnYXCqOum6rh2Yq69adogQnV0xvWGDuA4lHZA-xOmMcBKWKC_9NroD-H4BU-dy4yQbQWm31vbzMt14Y9Mq_eTiJYayLKVWHlO32psI7GNz_vxBEOl2IE6YnP4tQn_SZk1KHG0g51jrnH5ZK64PUSQQiWCGEPARHUFW7bRQkVUp309IDIFe_WRBV4XteWL39udHV-4Ysm6-fI9lH2uFOIixXRmFQmlTDP-1w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/prescription/release-drug?id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"prescription",
+								"release-drug"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Patient",
+			"item": [
+				{
+					"name": "Get Patient by ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4cldUUGdaTkR5V3RSaVIybkR0NVhZa3dQQmhVNk94VC0yQUZuN2dEUDhnIn0.eyJleHAiOjE3MTYwNjA0OTMsImlhdCI6MTcxNjAyNDQ5MywianRpIjoiM2M5YjM2MjAtMWY5Mi00YWIxLTljY2ItNzNhNjJjNjhhYzcwIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwL3JlYWxtcy9tYXN0ZXIiLCJhdWQiOlsibWFzdGVyLXJlYWxtIiwiYWNjb3VudCJdLCJzdWIiOiI0YThmMmMzYy02YzZkLTQ5ZTEtYTgwYy1hMjFmODczYzAxN2MiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJkcnVnLXN5c3RlbSIsInNlc3Npb25fc3RhdGUiOiI2YWE2ODQ1NC1kNTgyLTRkZGQtOGE2Yi1jMTk2ODY3MDJkODIiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImNyZWF0ZS1yZWFsbSIsIlBIQVJNQUNJU1QiLCJkZWZhdWx0LXJvbGVzLW1hc3RlciIsIm9mZmxpbmVfYWNjZXNzIiwiYWRtaW4iLCJ1bWFfYXV0aG9yaXphdGlvbiIsIkFETUlOIiwiVVNFUiIsIkRPQ1RPUiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImRydWctc3lzdGVtIjp7InJvbGVzIjpbIlBIQVJNQUNJU1QiLCJBRE1JTiIsIlVTRVIiLCJET0NUT1IiXX0sIm1hc3Rlci1yZWFsbSI6eyJyb2xlcyI6WyJ2aWV3LXJlYWxtIiwidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsImNyZWF0ZS1jbGllbnQiLCJtYW5hZ2UtdXNlcnMiLCJxdWVyeS1yZWFsbXMiLCJ2aWV3LWF1dGhvcml6YXRpb24iLCJxdWVyeS1jbGllbnRzIiwicXVlcnktdXNlcnMiLCJtYW5hZ2UtZXZlbnRzIiwibWFuYWdlLXJlYWxtIiwidmlldy1ldmVudHMiLCJ2aWV3LXVzZXJzIiwidmlldy1jbGllbnRzIiwibWFuYWdlLWF1dGhvcml6YXRpb24iLCJtYW5hZ2UtY2xpZW50cyIsInF1ZXJ5LWdyb3VwcyJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjZhYTY4NDU0LWQ1ODItNGRkZC04YTZiLWMxOTY4NjcwMmQ4MiIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ2YWxlbnRpbmEiLCJlbWFpbCI6ImFzdGFmaTk4QG1haWwucnUifQ.0Ajya9x7p6S-wO_FBT7nHsc_0fn6JPylAdd7TPYsDstXb5xzoTDoQ89gwDL0iB8PY2KYEpz00ko1QJ4wy3iNyLSnAYneBeGslixW3nPBlzBrHgWr2jJ7dzBc49RJ8-tVytWoQotrT8UuxjgcNRDCVKeZMNtIy-PTcdBDgC82T8Mp0_NTQWrk4PN9SnMs32DNyz9sJTHZSA0Ajh1rAcLtPOHRfAiIBYK1tUm6wz7yi1xSBUp8fKmKIKn35IV00UlpMr_ETAxzI1VcC_j4O9YK1eEi_-cc4dqIJh5bKV49k2BAZU9MjtdHDWGnuclhDC50fuRNdE5H_YKpavFc4b4yXQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/prescription-service/patient/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"prescription-service",
+								"patient",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Patients",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4cldUUGdaTkR5V3RSaVIybkR0NVhZa3dQQmhVNk94VC0yQUZuN2dEUDhnIn0.eyJleHAiOjE3MTYwNjA0OTMsImlhdCI6MTcxNjAyNDQ5MywianRpIjoiM2M5YjM2MjAtMWY5Mi00YWIxLTljY2ItNzNhNjJjNjhhYzcwIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwL3JlYWxtcy9tYXN0ZXIiLCJhdWQiOlsibWFzdGVyLXJlYWxtIiwiYWNjb3VudCJdLCJzdWIiOiI0YThmMmMzYy02YzZkLTQ5ZTEtYTgwYy1hMjFmODczYzAxN2MiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJkcnVnLXN5c3RlbSIsInNlc3Npb25fc3RhdGUiOiI2YWE2ODQ1NC1kNTgyLTRkZGQtOGE2Yi1jMTk2ODY3MDJkODIiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImNyZWF0ZS1yZWFsbSIsIlBIQVJNQUNJU1QiLCJkZWZhdWx0LXJvbGVzLW1hc3RlciIsIm9mZmxpbmVfYWNjZXNzIiwiYWRtaW4iLCJ1bWFfYXV0aG9yaXphdGlvbiIsIkFETUlOIiwiVVNFUiIsIkRPQ1RPUiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImRydWctc3lzdGVtIjp7InJvbGVzIjpbIlBIQVJNQUNJU1QiLCJBRE1JTiIsIlVTRVIiLCJET0NUT1IiXX0sIm1hc3Rlci1yZWFsbSI6eyJyb2xlcyI6WyJ2aWV3LXJlYWxtIiwidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsImNyZWF0ZS1jbGllbnQiLCJtYW5hZ2UtdXNlcnMiLCJxdWVyeS1yZWFsbXMiLCJ2aWV3LWF1dGhvcml6YXRpb24iLCJxdWVyeS1jbGllbnRzIiwicXVlcnktdXNlcnMiLCJtYW5hZ2UtZXZlbnRzIiwibWFuYWdlLXJlYWxtIiwidmlldy1ldmVudHMiLCJ2aWV3LXVzZXJzIiwidmlldy1jbGllbnRzIiwibWFuYWdlLWF1dGhvcml6YXRpb24iLCJtYW5hZ2UtY2xpZW50cyIsInF1ZXJ5LWdyb3VwcyJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjZhYTY4NDU0LWQ1ODItNGRkZC04YTZiLWMxOTY4NjcwMmQ4MiIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ2YWxlbnRpbmEiLCJlbWFpbCI6ImFzdGFmaTk4QG1haWwucnUifQ.0Ajya9x7p6S-wO_FBT7nHsc_0fn6JPylAdd7TPYsDstXb5xzoTDoQ89gwDL0iB8PY2KYEpz00ko1QJ4wy3iNyLSnAYneBeGslixW3nPBlzBrHgWr2jJ7dzBc49RJ8-tVytWoQotrT8UuxjgcNRDCVKeZMNtIy-PTcdBDgC82T8Mp0_NTQWrk4PN9SnMs32DNyz9sJTHZSA0Ajh1rAcLtPOHRfAiIBYK1tUm6wz7yi1xSBUp8fKmKIKn35IV00UlpMr_ETAxzI1VcC_j4O9YK1eEi_-cc4dqIJh5bKV49k2BAZU9MjtdHDWGnuclhDC50fuRNdE5H_YKpavFc4b4yXQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/prescription-service/patient/all?page=0&size=10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"prescription-service",
+								"patient",
+								"all"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create or Update Patient",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4cldUUGdaTkR5V3RSaVIybkR0NVhZa3dQQmhVNk94VC0yQUZuN2dEUDhnIn0.eyJleHAiOjE3MTYwNjA0OTMsImlhdCI6MTcxNjAyNDQ5MywianRpIjoiM2M5YjM2MjAtMWY5Mi00YWIxLTljY2ItNzNhNjJjNjhhYzcwIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwL3JlYWxtcy9tYXN0ZXIiLCJhdWQiOlsibWFzdGVyLXJlYWxtIiwiYWNjb3VudCJdLCJzdWIiOiI0YThmMmMzYy02YzZkLTQ5ZTEtYTgwYy1hMjFmODczYzAxN2MiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJkcnVnLXN5c3RlbSIsInNlc3Npb25fc3RhdGUiOiI2YWE2ODQ1NC1kNTgyLTRkZGQtOGE2Yi1jMTk2ODY3MDJkODIiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImNyZWF0ZS1yZWFsbSIsIlBIQVJNQUNJU1QiLCJkZWZhdWx0LXJvbGVzLW1hc3RlciIsIm9mZmxpbmVfYWNjZXNzIiwiYWRtaW4iLCJ1bWFfYXV0aG9yaXphdGlvbiIsIkFETUlOIiwiVVNFUiIsIkRPQ1RPUiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImRydWctc3lzdGVtIjp7InJvbGVzIjpbIlBIQVJNQUNJU1QiLCJBRE1JTiIsIlVTRVIiLCJET0NUT1IiXX0sIm1hc3Rlci1yZWFsbSI6eyJyb2xlcyI6WyJ2aWV3LXJlYWxtIiwidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsImNyZWF0ZS1jbGllbnQiLCJtYW5hZ2UtdXNlcnMiLCJxdWVyeS1yZWFsbXMiLCJ2aWV3LWF1dGhvcml6YXRpb24iLCJxdWVyeS1jbGllbnRzIiwicXVlcnktdXNlcnMiLCJtYW5hZ2UtZXZlbnRzIiwibWFuYWdlLXJlYWxtIiwidmlldy1ldmVudHMiLCJ2aWV3LXVzZXJzIiwidmlldy1jbGllbnRzIiwibWFuYWdlLWF1dGhvcml6YXRpb24iLCJtYW5hZ2UtY2xpZW50cyIsInF1ZXJ5LWdyb3VwcyJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjZhYTY4NDU0LWQ1ODItNGRkZC04YTZiLWMxOTY4NjcwMmQ4MiIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ2YWxlbnRpbmEiLCJlbWFpbCI6ImFzdGFmaTk4QG1haWwucnUifQ.0Ajya9x7p6S-wO_FBT7nHsc_0fn6JPylAdd7TPYsDstXb5xzoTDoQ89gwDL0iB8PY2KYEpz00ko1QJ4wy3iNyLSnAYneBeGslixW3nPBlzBrHgWr2jJ7dzBc49RJ8-tVytWoQotrT8UuxjgcNRDCVKeZMNtIy-PTcdBDgC82T8Mp0_NTQWrk4PN9SnMs32DNyz9sJTHZSA0Ajh1rAcLtPOHRfAiIBYK1tUm6wz7yi1xSBUp8fKmKIKn35IV00UlpMr_ETAxzI1VcC_j4O9YK1eEi_-cc4dqIJh5bKV49k2BAZU9MjtdHDWGnuclhDC50fuRNdE5H_YKpavFc4b4yXQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\": \"Jane\",\n    \"lastName\": \"Do\",\n    \"birthDate\": \"1990-01-01T00:00\",\n    \"insurancePolicyNr\": \"abs23\",\n    \"address\": \"test\"\n   \n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/prescription-service/patient/create-update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"prescription-service",
+								"patient",
+								"create-update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get My Prescriptions",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4cldUUGdaTkR5V3RSaVIybkR0NVhZa3dQQmhVNk94VC0yQUZuN2dEUDhnIn0.eyJleHAiOjE3MTYwNjA0OTMsImlhdCI6MTcxNjAyNDQ5MywianRpIjoiM2M5YjM2MjAtMWY5Mi00YWIxLTljY2ItNzNhNjJjNjhhYzcwIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwL3JlYWxtcy9tYXN0ZXIiLCJhdWQiOlsibWFzdGVyLXJlYWxtIiwiYWNjb3VudCJdLCJzdWIiOiI0YThmMmMzYy02YzZkLTQ5ZTEtYTgwYy1hMjFmODczYzAxN2MiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJkcnVnLXN5c3RlbSIsInNlc3Npb25fc3RhdGUiOiI2YWE2ODQ1NC1kNTgyLTRkZGQtOGE2Yi1jMTk2ODY3MDJkODIiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImNyZWF0ZS1yZWFsbSIsIlBIQVJNQUNJU1QiLCJkZWZhdWx0LXJvbGVzLW1hc3RlciIsIm9mZmxpbmVfYWNjZXNzIiwiYWRtaW4iLCJ1bWFfYXV0aG9yaXphdGlvbiIsIkFETUlOIiwiVVNFUiIsIkRPQ1RPUiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImRydWctc3lzdGVtIjp7InJvbGVzIjpbIlBIQVJNQUNJU1QiLCJBRE1JTiIsIlVTRVIiLCJET0NUT1IiXX0sIm1hc3Rlci1yZWFsbSI6eyJyb2xlcyI6WyJ2aWV3LXJlYWxtIiwidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsImNyZWF0ZS1jbGllbnQiLCJtYW5hZ2UtdXNlcnMiLCJxdWVyeS1yZWFsbXMiLCJ2aWV3LWF1dGhvcml6YXRpb24iLCJxdWVyeS1jbGllbnRzIiwicXVlcnktdXNlcnMiLCJtYW5hZ2UtZXZlbnRzIiwibWFuYWdlLXJlYWxtIiwidmlldy1ldmVudHMiLCJ2aWV3LXVzZXJzIiwidmlldy1jbGllbnRzIiwibWFuYWdlLWF1dGhvcml6YXRpb24iLCJtYW5hZ2UtY2xpZW50cyIsInF1ZXJ5LWdyb3VwcyJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjZhYTY4NDU0LWQ1ODItNGRkZC04YTZiLWMxOTY4NjcwMmQ4MiIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ2YWxlbnRpbmEiLCJlbWFpbCI6ImFzdGFmaTk4QG1haWwucnUifQ.0Ajya9x7p6S-wO_FBT7nHsc_0fn6JPylAdd7TPYsDstXb5xzoTDoQ89gwDL0iB8PY2KYEpz00ko1QJ4wy3iNyLSnAYneBeGslixW3nPBlzBrHgWr2jJ7dzBc49RJ8-tVytWoQotrT8UuxjgcNRDCVKeZMNtIy-PTcdBDgC82T8Mp0_NTQWrk4PN9SnMs32DNyz9sJTHZSA0Ajh1rAcLtPOHRfAiIBYK1tUm6wz7yi1xSBUp8fKmKIKn35IV00UlpMr_ETAxzI1VcC_j4O9YK1eEi_-cc4dqIJh5bKV49k2BAZU9MjtdHDWGnuclhDC50fuRNdE5H_YKpavFc4b4yXQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/prescription-service/prescription/my-prescriptions?page=0&size=10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"prescription-service",
+								"prescription",
+								"my-prescriptions"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth Server",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "client_id",
+									"value": "drug-system",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "2TmgUGgVZ9bhxRU8Bqpanz9dWT6TtaSy",
+									"type": "text"
+								},
+								{
+									"key": "scope",
+									"value": "openid",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "valentina",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:9000/realms/master/protocol/openid-connect/token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"realms",
+								"master",
+								"protocol",
+								"openid-connect",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Refresh token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "client_id",
+									"value": "drug-system",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "refresh_token",
+									"type": "text"
+								},
+								{
+									"key": "refresh_token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0YWQ4ZmU3Zi0zZTcyLTQ0YjUtYjJjZS03ZWJiMGU5YmJlMjMifQ.eyJleHAiOjE3MTM4MDQzODEsImlhdCI6MTcxMzgwMjU4MSwianRpIjoiYWJlMTVkMWQtYTk5OC00ODQyLTlkODItMmZhYmI2NTQ5ODA1IiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwL3JlYWxtcy9tYXN0ZXIiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjkwMDAvcmVhbG1zL21hc3RlciIsInN1YiI6ImJiNTk4MmQ4LWJiNTMtNDc0MS04MDk5LWExZGFkZmY5ZTZlOSIsInR5cCI6IlJlZnJlc2giLCJhenAiOiJkcnVnLXN5c3RlbSIsInNlc3Npb25fc3RhdGUiOiIyMTMwMTgwMi0zYmQzLTQxYmEtOTNhOS0yMGQ3MWY5Y2M1YmMiLCJzY29wZSI6Im9wZW5pZCBlbWFpbCBwcm9maWxlIiwic2lkIjoiMjEzMDE4MDItM2JkMy00MWJhLTkzYTktMjBkNzFmOWNjNWJjIn0.zjR_Af9q6gKfvIqgwT_WTNCv9yV-LQnoKslkSbXy8GE",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "2TmgUGgVZ9bhxRU8Bqpanz9dWT6TtaSy",
+									"type": "text"
+								},
+								{
+									"key": "scope",
+									"value": "openid",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:9000/realms/master/protocol/openid-connect/token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"realms",
+								"master",
+								"protocol",
+								"openid-connect",
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pharmacy",
+			"item": [
+				{
+					"name": "Get Pharmacy Info by ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4cldUUGdaTkR5V3RSaVIybkR0NVhZa3dQQmhVNk94VC0yQUZuN2dEUDhnIn0.eyJleHAiOjE3MTU5ODkzNzAsImlhdCI6MTcxNTk1MzM3MCwianRpIjoiNDc5Y2MxYWItNDMwYS00N2RhLTk5NzEtMDc0NDk5NGZkMDUwIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwL3JlYWxtcy9tYXN0ZXIiLCJhdWQiOlsibWFzdGVyLXJlYWxtIiwiYWNjb3VudCJdLCJzdWIiOiI0YThmMmMzYy02YzZkLTQ5ZTEtYTgwYy1hMjFmODczYzAxN2MiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJkcnVnLXN5c3RlbSIsInNlc3Npb25fc3RhdGUiOiJiNmY3M2FhMS1hYWQyLTQ0NjMtYjE4YS1jNzBlOTJhY2MwOTQiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImNyZWF0ZS1yZWFsbSIsIlBIQVJNQUNJU1QiLCJkZWZhdWx0LXJvbGVzLW1hc3RlciIsIm9mZmxpbmVfYWNjZXNzIiwiYWRtaW4iLCJ1bWFfYXV0aG9yaXphdGlvbiIsIkFETUlOIiwiVVNFUiIsIkRPQ1RPUiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImRydWctc3lzdGVtIjp7InJvbGVzIjpbIlBIQVJNQUNJU1QiLCJBRE1JTiIsIlVTRVIiLCJET0NUT1IiXX0sIm1hc3Rlci1yZWFsbSI6eyJyb2xlcyI6WyJ2aWV3LXJlYWxtIiwidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsImNyZWF0ZS1jbGllbnQiLCJtYW5hZ2UtdXNlcnMiLCJxdWVyeS1yZWFsbXMiLCJ2aWV3LWF1dGhvcml6YXRpb24iLCJxdWVyeS1jbGllbnRzIiwicXVlcnktdXNlcnMiLCJtYW5hZ2UtZXZlbnRzIiwibWFuYWdlLXJlYWxtIiwidmlldy1ldmVudHMiLCJ2aWV3LXVzZXJzIiwidmlldy1jbGllbnRzIiwibWFuYWdlLWF1dGhvcml6YXRpb24iLCJtYW5hZ2UtY2xpZW50cyIsInF1ZXJ5LWdyb3VwcyJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6ImI2ZjczYWExLWFhZDItNDQ2My1iMThhLWM3MGU5MmFjYzA5NCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ2YWxlbnRpbmEiLCJlbWFpbCI6ImFzdGFmaTk4QG1haWwucnUifQ.plnmWZzGuI9C_GwJUNg-_5_KenrYfzJn9iiN7WLyrJCbNVMls-niyO7Uzk4FH6HOS_FIfixILWHZhUdlZ1CSBMUcS2-MDvRrJXSGzTo_DaNwHaAlz5p0vyroaudAG2kdM4lAtfOEy2WlYV_nDHWvBC9pzqAITN3JrXvcCHA0QyI4h_mUkC6-ipPUcbuYoW6BkpBHNKsuBx7YGYe7e5TLATrjx50kSb3KESESnLvj8DtSORq_9BFvXboNrvayqZKu9XHRt9xLP6driYglkFWdNplilo2KXU8SEmlBqyFVLpqXxZrS0baE9J1EEWbU_89oGCmzxcMpJAfNENllCoM3yA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/stock-service/pharmacy/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"stock-service",
+								"pharmacy",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create or Update Pharmacy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4cldUUGdaTkR5V3RSaVIybkR0NVhZa3dQQmhVNk94VC0yQUZuN2dEUDhnIn0.eyJleHAiOjE3MTU5ODkzNzAsImlhdCI6MTcxNTk1MzM3MCwianRpIjoiNDc5Y2MxYWItNDMwYS00N2RhLTk5NzEtMDc0NDk5NGZkMDUwIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwL3JlYWxtcy9tYXN0ZXIiLCJhdWQiOlsibWFzdGVyLXJlYWxtIiwiYWNjb3VudCJdLCJzdWIiOiI0YThmMmMzYy02YzZkLTQ5ZTEtYTgwYy1hMjFmODczYzAxN2MiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJkcnVnLXN5c3RlbSIsInNlc3Npb25fc3RhdGUiOiJiNmY3M2FhMS1hYWQyLTQ0NjMtYjE4YS1jNzBlOTJhY2MwOTQiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImNyZWF0ZS1yZWFsbSIsIlBIQVJNQUNJU1QiLCJkZWZhdWx0LXJvbGVzLW1hc3RlciIsIm9mZmxpbmVfYWNjZXNzIiwiYWRtaW4iLCJ1bWFfYXV0aG9yaXphdGlvbiIsIkFETUlOIiwiVVNFUiIsIkRPQ1RPUiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImRydWctc3lzdGVtIjp7InJvbGVzIjpbIlBIQVJNQUNJU1QiLCJBRE1JTiIsIlVTRVIiLCJET0NUT1IiXX0sIm1hc3Rlci1yZWFsbSI6eyJyb2xlcyI6WyJ2aWV3LXJlYWxtIiwidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsImNyZWF0ZS1jbGllbnQiLCJtYW5hZ2UtdXNlcnMiLCJxdWVyeS1yZWFsbXMiLCJ2aWV3LWF1dGhvcml6YXRpb24iLCJxdWVyeS1jbGllbnRzIiwicXVlcnktdXNlcnMiLCJtYW5hZ2UtZXZlbnRzIiwibWFuYWdlLXJlYWxtIiwidmlldy1ldmVudHMiLCJ2aWV3LXVzZXJzIiwidmlldy1jbGllbnRzIiwibWFuYWdlLWF1dGhvcml6YXRpb24iLCJtYW5hZ2UtY2xpZW50cyIsInF1ZXJ5LWdyb3VwcyJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6ImI2ZjczYWExLWFhZDItNDQ2My1iMThhLWM3MGU5MmFjYzA5NCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ2YWxlbnRpbmEiLCJlbWFpbCI6ImFzdGFmaTk4QG1haWwucnUifQ.plnmWZzGuI9C_GwJUNg-_5_KenrYfzJn9iiN7WLyrJCbNVMls-niyO7Uzk4FH6HOS_FIfixILWHZhUdlZ1CSBMUcS2-MDvRrJXSGzTo_DaNwHaAlz5p0vyroaudAG2kdM4lAtfOEy2WlYV_nDHWvBC9pzqAITN3JrXvcCHA0QyI4h_mUkC6-ipPUcbuYoW6BkpBHNKsuBx7YGYe7e5TLATrjx50kSb3KESESnLvj8DtSORq_9BFvXboNrvayqZKu9XHRt9xLP6driYglkFWdNplilo2KXU8SEmlBqyFVLpqXxZrS0baE9J1EEWbU_89oGCmzxcMpJAfNENllCoM3yA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Felicia\",\n    \"address\": \"Stefan cel Mare\",\n    \"phone\": \"022232425\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/stock-service/pharmacy",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"stock-service",
+								"pharmacy"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Pharmacies by Name",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4cldUUGdaTkR5V3RSaVIybkR0NVhZa3dQQmhVNk94VC0yQUZuN2dEUDhnIn0.eyJleHAiOjE3MTU5ODgzODcsImlhdCI6MTcxNTk1MjM4NywianRpIjoiY2ZjMWY4ZjctNGQzMy00YmNlLWIxYTYtOTgwMjAxMDQxZmU1IiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDAwL3JlYWxtcy9tYXN0ZXIiLCJhdWQiOlsibWFzdGVyLXJlYWxtIiwiYWNjb3VudCJdLCJzdWIiOiI0YThmMmMzYy02YzZkLTQ5ZTEtYTgwYy1hMjFmODczYzAxN2MiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJkcnVnLXN5c3RlbSIsInNlc3Npb25fc3RhdGUiOiIwYzRhYWZjYi1hNzhhLTQ1YjAtYmIyMy05OGNkMWJhMjg3YzMiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImNyZWF0ZS1yZWFsbSIsIlBIQVJNQUNJU1QiLCJkZWZhdWx0LXJvbGVzLW1hc3RlciIsIm9mZmxpbmVfYWNjZXNzIiwiYWRtaW4iLCJ1bWFfYXV0aG9yaXphdGlvbiIsIkFETUlOIiwiVVNFUiIsIkRPQ1RPUiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImRydWctc3lzdGVtIjp7InJvbGVzIjpbIlBIQVJNQUNJU1QiLCJBRE1JTiIsIlVTRVIiLCJET0NUT1IiXX0sIm1hc3Rlci1yZWFsbSI6eyJyb2xlcyI6WyJ2aWV3LXJlYWxtIiwidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsImNyZWF0ZS1jbGllbnQiLCJtYW5hZ2UtdXNlcnMiLCJxdWVyeS1yZWFsbXMiLCJ2aWV3LWF1dGhvcml6YXRpb24iLCJxdWVyeS1jbGllbnRzIiwicXVlcnktdXNlcnMiLCJtYW5hZ2UtZXZlbnRzIiwibWFuYWdlLXJlYWxtIiwidmlldy1ldmVudHMiLCJ2aWV3LXVzZXJzIiwidmlldy1jbGllbnRzIiwibWFuYWdlLWF1dGhvcml6YXRpb24iLCJtYW5hZ2UtY2xpZW50cyIsInF1ZXJ5LWdyb3VwcyJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInNpZCI6IjBjNGFhZmNiLWE3OGEtNDViMC1iYjIzLTk4Y2QxYmEyODdjMyIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ2YWxlbnRpbmEiLCJlbWFpbCI6ImFzdGFmaTk4QG1haWwucnUifQ.sNcynmjL737_QFWKIbteeYE8IB2h8wALtKNtf8Sq5ed7OD35zGHHbwaaUUkw4ftB7fRxrwDQYz9XCz0SnoreBAu_KlsJCguE-wHvtJYkTV2_u1ETcQd_JZNsNxjPTZqc8HQi_gwPT3ERfED00LmXCfcZVjEq2XH941i4E3VJeVlg2oehguYM0DT3wNncYbsubEmnhqXRdKgwkudsfUiEyjEYMysWR94fxpqTVp8SA4D-WTSel5xCoJ9ux7gXW6b0So7N2zCVbUuSM3fCkYJO23SyXax7f6nLpfBQRAlkuETp8WOySoYDNzJZswUPCv9HYSb1n1iMaHnYvWND8VneFQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/stock-service/drug/pharmacies?name=Felicia",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"stock-service",
+								"drug",
+								"pharmacies"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Felicia"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
