@@ -1,0 +1,54 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: keycloak-deployment
+  namespace: default
+  labels:
+    app: keycloak
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: keycloak
+  template:
+    metadata:
+      labels:
+        app: keycloak
+    spec:
+      containers:
+        - name: keycloak
+          image: quay.io/keycloak/keycloak:23.0.6
+          imagePullPolicy: IfNotPresent
+          args: ["start-dev","--http-port=9000","--cache-stack=kubernetes", "--hostname-url=http://kubernetes.docker.internal:80"]
+          env:
+            - name: KC_HOSTNAME_PORT
+              value: "9000"
+            - name: KC_PROXY_ADDRESS_FORWARDING
+              value: "true"
+            - name: KC_HOSTNAME_STRICT_BACKCHANNEL
+              value: "false"
+            - name: KC_HTTP_ENABLED
+              value: "true"
+            - name: KC_FRONTEND_URL
+              value: http://kubernetes.docker.internal/auth
+            - name: KC_PROXY
+              value: "edge"
+            - name: KC_HOSTNAME_STRICT_HTTPS
+              value: "false"
+            - name: KC_HEALTH_ENABLED
+              value: "true"
+            - name: KEYCLOAK_ADMIN
+              value: "valentina"
+            - name: KEYCLOAK_ADMIN_PASSWORD
+              value: "password"
+            - name: KC_DB
+              value: "postgres"
+            - name: KC_DB_URL
+              value: jdbc:postgresql://keycloak-db-service.default.svc.cluster.local:5432/auth
+            - name: KC_DB_USERNAME
+              value: "valentina"
+            - name: KC_DB_PASSWORD
+              value: "password"
+          ports:
+            - name: http
+              containerPort: 9000

@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: prescription-db-slave-deployment
+  namespace: default
+  labels:
+    app: prescription-db-slave
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: prescription-db-slave
+  template:
+    metadata:
+      labels:
+        app: prescription-db-slave
+    spec:
+      containers:
+        - name: prescription-db-slave
+          image: bitnami/postgresql
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: POSTGRESQL_REPLICATION_MODE
+              value: "slave"
+            - name: POSTGRESQL_REPLICATION_USER
+              value: "repl_user"
+            - name: POSTGRESQL_REPLICATION_PASSWORD
+              value: "repl_user"
+            - name: POSTGRESQL_USERNAME
+              value: "valentina"
+            - name: POSTGRESQL_PASSWORD
+              value: "password"
+            - name: POSTGRESQL_DATABASE
+              value: "prescription"
+            - name: ALLOW_EMPTY_PASSWORD
+              value: "yes"
+            - name: MAX_REPLICATION_LAG
+              value: "3600"
+            - name: POSTGRESQL_MASTER_HOST
+              value: "prescription-db-master-service.default.svc.cluster.local"
+            - name: POSTGRESQL_MASTER_PORT_NUMBER
+              value: "5434"
+          ports:
+            - containerPort: 5432

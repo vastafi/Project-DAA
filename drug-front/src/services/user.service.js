@@ -1,8 +1,7 @@
 import axios from 'axios';
 import authHeader from './auth-header';
 
-const API_URL = 'http://localhost:9000/realms/master/protocol/openid-connect/userinfo';
-
+const API_URL = 'http://192.168.100.7:9000/realms/master/protocol/openid-connect/userinfo';
 class UserService {
   getPublicContent() {
     return axios.get(API_URL, { headers: authHeader() });

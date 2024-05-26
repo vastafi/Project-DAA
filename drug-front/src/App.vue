@@ -59,12 +59,15 @@ return {
   };
 },
   mounted() {
-    UserService.getPublicContent().then(
-        response => {
-          this.currentUser = response.data;
-        }
-    );
+    if(localStorage.getItem('user')) {
+      UserService.getPublicContent().then(
+          response => {
+            this.currentUser = response.data;
+          }
+      );
+    }
   },
+
   computed: {
     showAdminBoard() {
       // eslint-disable-next-line no-undef

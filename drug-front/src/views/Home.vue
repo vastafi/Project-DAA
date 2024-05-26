@@ -37,11 +37,13 @@ export default {
     this.fetchDrugs();
   },
   mounted() {
-    UserService.getPublicContent().then(
-        response => {
-          this.currentUser = response.data;
-        }
-    );
+    if(localStorage.getItem('user')) {
+      UserService.getPublicContent().then(
+          response => {
+            this.currentUser = response.data;
+          }
+      );
+    }
   },
   computed: {
     filteredDrugs() {

@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: prescription-db-master-deployment
+  namespace: default
+  labels:
+    app: prescription-db-master
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: prescription-db-master
+  template:
+    metadata:
+      labels:
+        app: prescription-db-master
+    spec:
+      containers:
+        - name: prescription-db-master
+          image: bitnami/postgresql
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: POSTGRESQL_LOG_HOSTNAME
+              value: "true"
+            - name: POSTGRESQL_REPLICATION_MODE
+              value: "master"
+            - name: POSTGRESQL_REPLICATION_USER
+              value: "repl_user"
+            - name: POSTGRESQL_REPLICATION_PASSWORD
+              value: "repl_user"
+            - name: POSTGRESQL_USERNAME
+              value: "valentina"
+            - name: POSTGRESQL_PASSWORD
+              value: "password"
+            - name: POSTGRESQL_DATABASE
+              value: "prescription"
+            - name: ALLOW_EMPTY_PASSWORD
+              value: "yes"
+            - name: WAL_SENDER_FREQUENCY
+              value: "100"
+            - name: MAX_REPLICATION_LAG
+              value: "3600"
+            - name: SYNCHRONOUS_COMMIT
+              value: "off"
+          ports:
+            - containerPort: 5432

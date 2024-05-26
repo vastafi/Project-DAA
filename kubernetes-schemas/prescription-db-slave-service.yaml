@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: prescription-db-slave-service
+  namespace: default
+spec:
+  selector:
+    app: prescription-db-slave
+  type: ClusterIP
+  ports:
+    - protocol: TCP
+      port: 5436
+      targetPort: 5432

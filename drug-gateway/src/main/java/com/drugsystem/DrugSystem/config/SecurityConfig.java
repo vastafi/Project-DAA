@@ -115,6 +115,7 @@ public class SecurityConfig {
             configuration.addAllowedOrigin(localhostCors);
         }
         configuration.addAllowedHeader("*");
+        configuration.addAllowedHeader("*");
         configuration.addAllowedMethod("*");
         configuration.setAllowCredentials(true);
 

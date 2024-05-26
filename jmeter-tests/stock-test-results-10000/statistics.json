@@ -1,0 +1,50 @@
+{
+  "Create pharmacy" : {
+    "transaction" : "Create pharmacy",
+    "sampleCount" : 10000,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 89.62090000000026,
+    "medianResTime" : 17.0,
+    "minResTime" : 11.0,
+    "maxResTime" : 1057.0,
+    "pct1ResTime" : 409.0,
+    "pct2ResTime" : 564.0,
+    "pct3ResTime" : 737.0,
+    "throughput" : 199.30641368039224,
+    "receivedKBytesPerSec" : 113.47804561999243,
+    "sentKBytesPerSec" : 437.1505909435166
+  },
+  "Total" : {
+    "transaction" : "Total",
+    "sampleCount" : 20000,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 104.55810000000001,
+    "medianResTime" : 16.0,
+    "minResTime" : 11.0,
+    "maxResTime" : 1541.0,
+    "pct1ResTime" : 460.0,
+    "pct2ResTime" : 672.0,
+    "pct3ResTime" : 1011.9800000000032,
+    "throughput" : 398.4539984858748,
+    "receivedKBytesPerSec" : 280.4992605254114,
+    "sentKBytesPerSec" : 868.6997574411283
+  },
+  "Get drug suggestions" : {
+    "transaction" : "Get drug suggestions",
+    "sampleCount" : 10000,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 119.49529999999982,
+    "medianResTime" : 15.0,
+    "minResTime" : 11.0,
+    "maxResTime" : 1541.0,
+    "pct1ResTime" : 554.8999999999996,
+    "pct2ResTime" : 810.0,
+    "pct3ResTime" : 1125.0,
+    "throughput" : 199.27464030927425,
+    "receivedKBytesPerSec" : 167.10638120989597,
+    "sentKBytesPerSec" : 431.82658871706985
+  }
+}

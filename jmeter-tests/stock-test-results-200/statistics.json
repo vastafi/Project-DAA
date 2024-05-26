@@ -1,0 +1,50 @@
+{
+  "Get all patients" : {
+    "transaction" : "Get all patients",
+    "sampleCount" : 200,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 192.81999999999994,
+    "medianResTime" : 188.5,
+    "minResTime" : 28.0,
+    "maxResTime" : 471.0,
+    "pct1ResTime" : 309.8,
+    "pct2ResTime" : 338.69999999999993,
+    "pct3ResTime" : 456.6400000000003,
+    "throughput" : 139.86013986013987,
+    "receivedKBytesPerSec" : 79.35423951048952,
+    "sentKBytesPerSec" : 306.76354895104896
+  },
+  "Total" : {
+    "transaction" : "Total",
+    "sampleCount" : 400,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 234.0824999999999,
+    "medianResTime" : 234.5,
+    "minResTime" : 16.0,
+    "maxResTime" : 729.0,
+    "pct1ResTime" : 413.90000000000003,
+    "pct2ResTime" : 462.69999999999993,
+    "pct3ResTime" : 571.8500000000001,
+    "throughput" : 276.05244996549345,
+    "receivedKBytesPerSec" : 193.92145445134574,
+    "sentKBytesPerSec" : 601.8428657694961
+  },
+  "Get drug suggestions" : {
+    "transaction" : "Get drug suggestions",
+    "sampleCount" : 200,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 275.3450000000001,
+    "medianResTime" : 296.0,
+    "minResTime" : 16.0,
+    "maxResTime" : 729.0,
+    "pct1ResTime" : 453.9,
+    "pct2ResTime" : 489.74999999999994,
+    "pct3ResTime" : 641.5100000000004,
+    "throughput" : 141.14326040931547,
+    "receivedKBytesPerSec" : 118.21850741002118,
+    "sentKBytesPerSec" : 305.85634262526463
+  }
+}
