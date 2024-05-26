@@ -4,11 +4,9 @@ Drug System is a comprehensive application designed to efficiently manage drug a
 
 ## Table of Contents
 
-- [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
-
-## Requirements
+- [Tests](#tests)
 
 ## Installation
 
@@ -55,6 +53,8 @@ Drug System is a comprehensive application designed to efficiently manage drug a
    - `stock-service` will be available at `http://localhost:8082`
    - `prescription-service` will be available at `http://localhost:8081`
    - `auth-server` (Keycloak) will be available at `http://localhost:9000`
+   - `http-auth-server` (Keycloak) alternative for keycloak (for front compatibility)
+
 
 ## Keycloak Setup
 
@@ -93,3 +93,7 @@ Drug System is a comprehensive application designed to efficiently manage drug a
 - Local:   http://localhost:3000/
 - Network: http://172.18.6.115:3000/
 
+## Tests
+Use JMeter
+
+How to Generate JMeter Dashboard Report? https://medium.com/beyn-technology/how-to-generate-jmeter-dashboard-report-9e05a28789d6
