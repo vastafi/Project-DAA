@@ -96,4 +96,8 @@ Drug System is a comprehensive application designed to efficiently manage drug a
 ## Tests
 Use JMeter
 
-How to Generate JMeter Dashboard Report? https://medium.com/beyn-technology/how-to-generate-jmeter-dashboard-report-9e05a28789d6
+How to Generate JMeter Dashboard Report? 
+
+1. https://jmeter.apache.org/usermanual/generating-dashboard.html
+
+2. https://medium.com/beyn-technology/how-to-generate-jmeter-dashboard-report-9e05a28789d6

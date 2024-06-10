@@ -4,7 +4,7 @@ metadata:
   name: keycloak-service
   namespace: default
 spec:
-  externalName: 192.168.100.7
+  externalName: 192.168.1.6
   selector:
     app: keycloak
   type: ExternalName

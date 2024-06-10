@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-const API_URL_LOGIN = 'http://192.168.100.7:9000/realms/master/protocol/openid-connect/token';
-const API_URL_REGISTER = "http://192.168.100.7:9000/master/users";
+const API_URL_LOGIN = 'http://192.168.1.6:9000/realms/master/protocol/openid-connect/token';
+const API_URL_REGISTER = "http://192.168.1.6:9000/master/users";
 const qs = require('qs');
 class AuthService {
   login(user) {
